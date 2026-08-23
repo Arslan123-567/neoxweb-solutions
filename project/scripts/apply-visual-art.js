@@ -33,7 +33,7 @@ const heroByFile = {
     'web.html': 'assets/services/web-platform.svg',
     'development.html': 'assets/services/development.svg',
     'software-engineering.html': 'assets/services/software-engineering.svg',
-    'data-analytics.html': 'assets/services/data-analytics.svg',
+    'data-analysis.html': 'assets/services/data-analytics.svg',
     'ecommerce-strategy.html': 'assets/services/ecommerce-strategy.svg',
     'ai.html': 'assets/services/ai-automation.svg',
     'testing-qa.html': 'assets/services/testing-qa.svg',

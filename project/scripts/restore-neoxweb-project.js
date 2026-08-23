@@ -25,7 +25,7 @@ const NEOX_HEADER = `<!-- NEOXWEB — header -->
                             <a href="web.html">Web Development</a>
                             <a href="development.html">Web App Development</a>
                             <a href="mobile.html">Mobile Apps</a>
-                            <a href="data-analytics.html">SEO &amp; Growth</a>
+                            <a href="data-analysis.html">SEO &amp; Growth</a>
                             <a href="ecommerce-strategy.html">PPC Advertising</a>
                             <a href="product-design.html">Social Media</a>
                         </div>
@@ -75,7 +75,7 @@ const NEOX_FOOTER = `<footer class="ui-footer ui-footer-unified">
             <div>
                 <h4>Core Services</h4>
                 <a href="web.html">Web Development</a>
-                <a href="data-analytics.html">SEO &amp; Growth</a>
+                <a href="data-analysis.html">SEO &amp; Growth</a>
                 <a href="ecommerce-strategy.html">PPC Advertising</a>
                 <a href="product-design.html">Social Media</a>
                 <a href="development.html">Web App Development</a>

@@ -58,7 +58,7 @@ const PAGE_CONFIG = {
             ['Dashboards', 'AI-powered insights'],
         ],
     },
-    'data-analytics.html': {
+    'data-analysis.html': {
         tag: 'Analytics gallery',
         title: 'Data and reporting highlights',
         images: ['seo-new.jpg', 'portfolio-seo.jpg', 'ppc.jpg', 'web-dev.jpg', 'social-media-new.jpg', 'portfolio-ppc.jpg'],

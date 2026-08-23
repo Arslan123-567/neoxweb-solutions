@@ -60,8 +60,8 @@ function writeHeader() {
                         </div>
                         <div class="ui-mega-col">
                             <h4>Data &amp; Analytics</h4>
-                            <a href="data-analytics.html">Data Engineering</a>
-                            <a href="data-analytics.html">Analytics &amp; Visualization</a>
+                            <a href="data-analysis.html">Data Engineering</a>
+                            <a href="data-analysis.html">Analytics &amp; Visualization</a>
                             <a href="ai.html">AI &amp; Machine Learning</a>
                             <div class="ui-mega-case" style="margin-top:1rem">
                                 <span class="tag">Case study</span>
@@ -82,8 +82,8 @@ function writeHeader() {
                         </div>
                         <div class="ui-mega-col">
                             <h4>Digital Strategy</h4>
-                            <a href="data-analytics.html">Digital Marketing</a>
-                            <a href="data-analytics.html">SEO Marketing Services</a>
+                            <a href="data-analysis.html">Digital Marketing</a>
+                            <a href="data-analysis.html">SEO Marketing Services</a>
                             <a href="blog.html">Content Marketing Services</a>
                             <div class="ui-mega-case" style="margin-top:1rem">
                                 <span class="tag">Case study</span>
@@ -181,7 +181,7 @@ function writeFooter() {
                 <a href="web.html">Website Development</a>
                 <a href="mobile.html">Mobile App Development</a>
                 <a href="ecommerce-strategy.html">Ecommerce Development</a>
-                <a href="data-analytics.html">Data Engineering</a>
+                <a href="data-analysis.html">Data Engineering</a>
             </div>
             <div>
                 <h4>Technology</h4>
@@ -280,8 +280,8 @@ function buildMain() {
                 <div class="ui-home-pillar">
                     <h4>Data &amp; Analytics</h4>
                     <ul>
-                        <li><a href="data-analytics.html">Data Engineering</a></li>
-                        <li><a href="data-analytics.html">Analytics &amp; Visualization</a></li>
+                        <li><a href="data-analysis.html">Data Engineering</a></li>
+                        <li><a href="data-analysis.html">Analytics &amp; Visualization</a></li>
                         <li><a href="ai.html">AI &amp; Machine Learning</a></li>
                     </ul>
                 </div>
@@ -306,8 +306,8 @@ function buildMain() {
                 <div class="ui-home-pillar">
                     <h4>Digital Strategy</h4>
                     <ul>
-                        <li><a href="data-analytics.html">Digital Marketing</a></li>
-                        <li><a href="data-analytics.html">SEO Marketing Services</a></li>
+                        <li><a href="data-analysis.html">Digital Marketing</a></li>
+                        <li><a href="data-analysis.html">SEO Marketing Services</a></li>
                         <li><a href="blog.html">Content Marketing Services</a></li>
                     </ul>
                 </div>

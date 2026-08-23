@@ -1248,7 +1248,9 @@ html body .nxv-shell .nxv-mobile-footer {
     #mainNavbar .nav-links > li > a,
     #mainNavbar .navbar__drawer-contact,
     body.nx-app-body .ui-mobile-icon-btn {
-        background: transparent !important;
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        color:black
     }
 
     #mainNavbar .nav-links > li > a:hover,
@@ -1258,7 +1260,12 @@ html body .nxv-shell .nxv-mobile-footer {
     #mainNavbar .navbar__drawer-contact:focus-visible,
     body.nx-app-body .ui-mobile-icon-btn:hover,
     body.nx-app-body .ui-mobile-icon-btn:focus-visible {
-        color: #22c55e !important;
+        color: #000000 !important;
+    }
+
+    body.nx-app-body .ui-mobile-icon-btn:hover i,
+    body.nx-app-body .ui-mobile-icon-btn:focus-visible i {
+        color: #000000 !important;
     }
 
     #mainNavbar .hamburger span {

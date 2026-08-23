@@ -1255,6 +1255,73 @@ table {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 520px) {
+  .data-cards,
+  .qa-gallery-grid,
+  .ui-resources-grid,
+  .ui-blog-grid,
+  .project-grid,
+  .portfolio-grid,
+  .team-grid,
+  .nx-team-grid,
+  .nx-why-grid,
+  .nx-process-grid,
+  .svc-advantage-grid,
+  .modernization-grid,
+  .cs-portfolio-grid,
+  .ui-portfolio-grid {
+    display: flex !important;
+    grid-template-columns: none !important;
+    gap: 0.9rem !important;
+    width: 100% !important;
+    max-width: none !important;
+    overflow-x: auto !important;
+    padding: 0 12% 0 0 !important;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .data-cards::-webkit-scrollbar,
+  .qa-gallery-grid::-webkit-scrollbar,
+  .ui-resources-grid::-webkit-scrollbar,
+  .ui-blog-grid::-webkit-scrollbar,
+  .project-grid::-webkit-scrollbar,
+  .portfolio-grid::-webkit-scrollbar,
+  .team-grid::-webkit-scrollbar,
+  .nx-team-grid::-webkit-scrollbar,
+  .nx-why-grid::-webkit-scrollbar,
+  .nx-process-grid::-webkit-scrollbar,
+  .svc-advantage-grid::-webkit-scrollbar,
+  .modernization-grid::-webkit-scrollbar,
+  .cs-portfolio-grid::-webkit-scrollbar,
+  .ui-portfolio-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .data-cards > *,
+  .qa-gallery-grid > *,
+  .ui-resources-grid > *,
+  .ui-blog-grid > *,
+  .project-grid > *,
+  .portfolio-grid > *,
+  .team-grid > *,
+  .nx-team-grid > *,
+  .nx-why-grid > *,
+  .nx-process-grid > *,
+  .svc-advantage-grid > *,
+  .modernization-grid > *,
+  .cs-portfolio-grid > *,
+  .ui-portfolio-grid > * {
+    flex: 0 0 88% !important;
+    width: 88% !important;
+    min-width: 0 !important;
+    scroll-snap-align: start;
+  }
+}
+
 .filter-btn {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);

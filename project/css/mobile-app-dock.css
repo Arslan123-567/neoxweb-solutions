@@ -201,12 +201,27 @@
         font-size: 2.15rem !important;
     }
 
+    body.nx-app-body .nx-wa-panel .nx-wa-num-chip {
+        width: fit-content !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    body.nx-app-body .nx-wa-panel__foot > button#nxWaSend {
+        flex: 0 0 42px !important;
+        width: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+        padding: 0 !important;
+    }
+
     /* Unified-style mobile top bar */
     body.nx-app-body .nx-app-header.ui-mobile-header {
         justify-content: space-between;
         padding-left: 0;
         padding-right: 0.85rem;
-        background: rgba(255, 255, 255, 0.96) !important;
+        background: #ffffff !important;
+        background-color: #ffffff !important;
         border-bottom: 1px solid rgba(17, 17, 17, 0.08);
         color: #111111 !important;
     }
@@ -225,27 +240,38 @@
         object-fit: contain;
         object-position: left center;
         display: block;
-        background: transparent;
+        background: transparent !important;
     }
 
     body.nx-app-body .ui-mobile-header__actions {
         display: flex;
         align-items: center;
-        gap: 0.45rem;
+        gap: 2px !important;
+        background: transparent !important;
     }
 
     body.nx-app-body .ui-mobile-icon-btn {
-        width: 38px;
-        height: 38px;
+        flex: 0 0 38px !important;
+        width: 38px !important;
+        min-width: 38px !important;
+        max-width: 38px !important;
+        height: 38px !important;
+        min-height: 38px !important;
+        max-height: 38px !important;
         border-radius: 50%;
         border: 1px solid rgba(17, 17, 17, 0.12);
-        background: #ffffff;
-        color: #111111;
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        color: #000000 !important;
         display: grid;
         place-items: center;
         font-size: 0.95rem;
         cursor: pointer;
         padding: 0;
+    }
+
+    body.nx-app-body .ui-mobile-icon-btn i {
+        color: #000000 !important;
     }
 
     body.nx-app-body main,
@@ -487,6 +513,21 @@
         cursor: pointer;
         display: grid;
         place-items: center;
+    }
+
+    body.nx-app-body .nx-ai-chat__close {
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: 3rem !important;
+        padding: 0.15rem 0.35rem !important;
+    }
+
+    body.nx-app-body .nx-ai-chat__foot > button {
+        flex: 0 0 40px !important;
+        width: 40px !important;
+        min-width: 40px !important;
+        max-width: 40px !important;
+        padding: 0 !important;
     }
 }
 

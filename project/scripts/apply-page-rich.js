@@ -55,7 +55,7 @@ const BLOCKS = {
                     </article>
                     <article class="neox-service-card">
                         <div class="neox-service-card__media"><img src="assets/images/neoxweb/seo-new.jpg" alt="SEO" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-search"></i> SEO</span></div>
-                        <div class="neox-service-card__body"><h3>Search Engine Optimization</h3><p>Boost Google rankings and organic traffic.</p><a href="data-analytics.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
+                        <div class="neox-service-card__body"><h3>Search Engine Optimization</h3><p>Boost Google rankings and organic traffic.</p><a href="data-analysis.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
                     </article>
                     <article class="neox-service-card">
                         <div class="neox-service-card__media"><img src="assets/images/neoxweb/ppc.jpg" alt="PPC" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-chart-line"></i> PPC</span></div>
@@ -146,7 +146,7 @@ const BLOCKS = {
 
 const SERVICE_PAGES = new Set([
     'web.html', 'ai.html', 'mobile.html', 'cloud.html', 'software-engineering.html',
-    'development.html', 'it-consulting.html', 'data-analytics.html', 'application-modernization.html',
+    'development.html', 'it-consulting.html', 'data-analysis.html', 'application-modernization.html',
     'saas-platforms.html', 'product-design.html', 'testing-qa.html', 'ecommerce-strategy.html'
 ]);
 

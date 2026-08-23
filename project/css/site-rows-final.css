@@ -1598,3 +1598,235 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 520px) {
+  .neoxweb-site .svc-vertical-list,
+  .neoxweb-site .end-to-end-business,
+  .neoxweb-site .svc-advantage-grid,
+  .neoxweb-site .nx-stack-cards,
+  .neoxweb-site .svc-industry-compact,
+  .neoxweb-site .ui-process-grid,
+  .neoxweb-site .svc-engage-grid,
+  .neoxweb-site .advantage-grid,
+  .neoxweb-site .case-grid,
+  .neoxweb-site .industry-grid,
+  .neoxweb-site .process-grid,
+  .neoxweb-site .engage-grid,
+  .neoxweb-site .resources-grid,
+  .neoxweb-site .svc-showcase-grid,
+  .neoxweb-site .project-gallery,
+  .neoxweb-site .capabilities-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    grid-template-columns: none !important;
+    gap: 0.9rem !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding: 0 12% 0 0 !important;
+    overflow-x: auto !important;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .neoxweb-site .svc-vertical-list::-webkit-scrollbar,
+  .neoxweb-site .end-to-end-business::-webkit-scrollbar,
+  .neoxweb-site .svc-advantage-grid::-webkit-scrollbar,
+  .neoxweb-site .nx-stack-cards::-webkit-scrollbar,
+  .neoxweb-site .svc-industry-compact::-webkit-scrollbar,
+  .neoxweb-site .ui-process-grid::-webkit-scrollbar,
+  .neoxweb-site .svc-engage-grid::-webkit-scrollbar,
+  .neoxweb-site .advantage-grid::-webkit-scrollbar,
+  .neoxweb-site .case-grid::-webkit-scrollbar,
+  .neoxweb-site .industry-grid::-webkit-scrollbar,
+  .neoxweb-site .process-grid::-webkit-scrollbar,
+  .neoxweb-site .engage-grid::-webkit-scrollbar,
+  .neoxweb-site .resources-grid::-webkit-scrollbar,
+  .neoxweb-site .svc-showcase-grid::-webkit-scrollbar,
+  .neoxweb-site .project-gallery::-webkit-scrollbar,
+  .neoxweb-site .capabilities-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .neoxweb-site .svc-vertical-list > *,
+  .neoxweb-site .end-to-end-business > *,
+  .neoxweb-site .svc-advantage-grid > *,
+  .neoxweb-site .nx-stack-cards > *,
+  .neoxweb-site .svc-industry-compact > *,
+  .neoxweb-site .ui-process-grid > *,
+  .neoxweb-site .svc-engage-grid > *,
+  .neoxweb-site .advantage-grid > *,
+  .neoxweb-site .case-grid > *,
+  .neoxweb-site .industry-grid > *,
+  .neoxweb-site .process-grid > *,
+  .neoxweb-site .engage-grid > *,
+  .neoxweb-site .resources-grid > *,
+  .neoxweb-site .svc-showcase-grid > *,
+  .neoxweb-site .project-gallery > *,
+  .neoxweb-site .capabilities-grid > * {
+    flex: 0 0 88% !important;
+    width: 88% !important;
+    min-width: 0 !important;
+    scroll-snap-align: start;
+  }
+
+  .neoxweb-site .ui-process-grid {
+    padding: 0 12% 0 0 !important;
+    border-left: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 8% 0 0 !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card {
+    display: flex !important;
+    flex: 0 0 90% !important;
+    flex-direction: column !important;
+    width: 90% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(74, 222, 128, 0.2) !important;
+    border-radius: 16px !important;
+    background: linear-gradient(145deg, rgba(20, 34, 26, 0.98), rgba(10, 18, 14, 0.98)) !important;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24) !important;
+    scroll-snap-align: start;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card .thumb {
+    width: 100% !important;
+    height: 150px !important;
+    min-height: 150px !important;
+    max-height: 150px !important;
+    flex: 0 0 150px !important;
+    background: #0a120d !important;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card .thumb .visual-art-wrap,
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card .body {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    gap: 0.45rem !important;
+    min-height: 154px !important;
+    padding: 1rem 1.05rem 1.15rem !important;
+    background: transparent !important;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card .type {
+    font-size: 0.68rem !important;
+    letter-spacing: 0.1em !important;
+    color: #68e895 !important;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card h4 {
+    margin: 0 !important;
+    color: #f4fff7 !important;
+    font-size: 1.05rem !important;
+    line-height: 1.32 !important;
+  }
+
+  body.neoxweb-site:has(.ui-resources-grid) .ui-resources-grid > .ui-resource-card .meta {
+    margin-top: auto !important;
+    color: rgba(220, 240, 225, 0.62) !important;
+    font-size: 0.78rem !important;
+    line-height: 1.45 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-visual {
+    display: none !important;
+  }
+
+  body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-grid {
+    display: block !important;
+    min-height: 0 !important;
+    padding: calc(var(--nav-h, 72px) + 2rem) 0 5rem !important;
+  }
+
+  body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-copy {
+    max-width: 100% !important;
+  }
+
+  body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-copy h1 {
+    font-size: clamp(2.25rem, 11vw, 3.5rem) !important;
+    line-height: 1.04 !important;
+  }
+
+  body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-lead {
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .neoxweb-site .data-cards,
+  .neoxweb-site .web-why-grid,
+  .neoxweb-site .web-process,
+  .neoxweb-site .gallery-showcase__grid,
+  .neoxweb-site .resource-cards-grid,
+  .neoxweb-site .ui-industry-grid,
+  .neoxweb-site .resource-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    grid-template-columns: none !important;
+    gap: 0.9rem !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding: 0 12% 0 0 !important;
+    overflow-x: auto !important;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .neoxweb-site .data-cards::-webkit-scrollbar,
+  .neoxweb-site .web-why-grid::-webkit-scrollbar,
+  .neoxweb-site .web-process::-webkit-scrollbar,
+  .neoxweb-site .gallery-showcase__grid::-webkit-scrollbar,
+  .neoxweb-site .resource-cards-grid::-webkit-scrollbar,
+  .neoxweb-site .ui-industry-grid::-webkit-scrollbar,
+  .neoxweb-site .resource-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .neoxweb-site .data-cards > *,
+  .neoxweb-site .web-why-grid > *,
+  .neoxweb-site .web-process > *,
+  .neoxweb-site .gallery-showcase__grid > *,
+  .neoxweb-site .resource-cards-grid > *,
+  .neoxweb-site .ui-industry-grid > *,
+  .neoxweb-site .resource-grid > * {
+    flex: 0 0 88% !important;
+    width: 88% !important;
+    min-width: 0 !important;
+    scroll-snap-align: start;
+  }
+}

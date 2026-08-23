@@ -383,7 +383,7 @@ SERVICES = [
         "cta_h2": "Get expert IT guidance", "cta_p": "Book a consultation to align your technology strategy with business growth.",
     },
     {
-        "file": "data-analytics.html",
+        "file": "data-analysis.html",
         "title": "Data & Analytics | Nexura",
         "description": "Business intelligence, data pipelines, and analytics for data-driven decisions.",
         "tag": "Data & Analytics",

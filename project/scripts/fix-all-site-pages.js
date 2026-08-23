@@ -98,7 +98,7 @@ function richBlock() {
                     </article>
                     <article class="neox-service-card">
                         <div class="neox-service-card__media"><div class="visual-art-wrap visual-art-wrap--card" aria-hidden="true"><img src="assets/images/neoxweb/seo-new.svg" alt="" class="visual-art" loading="lazy"></div><span class="neox-service-card__badge"><i class="fas fa-search"></i> SEO</span></div>
-                        <div class="neox-service-card__body"><h3>Search Engine Optimization</h3><p>Boost Google rankings and organic traffic.</p><a href="data-analytics.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
+                        <div class="neox-service-card__body"><h3>Search Engine Optimization</h3><p>Boost Google rankings and organic traffic.</p><a href="data-analysis.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
                     </article>
                     <article class="neox-service-card">
                         <div class="neox-service-card__media"><div class="visual-art-wrap visual-art-wrap--card" aria-hidden="true"><img src="assets/images/neoxweb/ppc.svg" alt="" class="visual-art" loading="lazy"></div><span class="neox-service-card__badge"><i class="fas fa-chart-line"></i> PPC</span></div>

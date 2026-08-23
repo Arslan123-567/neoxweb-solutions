@@ -405,3 +405,27 @@ body.web-container {
         padding-bottom: 2rem !important;
     }
 }
+
+/* ── UI container (studies, resources, etc.) ── */
+.web-container .ui-container {
+    width: 100% !important;
+    max-width: min(1280px, 100%) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: clamp(1rem, 2.5vw, 2rem) !important;
+    padding-right: clamp(1rem, 2.5vw, 2rem) !important;
+    box-sizing: border-box !important;
+}
+
+/* ── Case study cards — full-width single row ── */
+.web-container .ui-cs-slider-wrap {
+    display: grid !important;
+    gap: clamp(0.75rem, 1.5vw, 1.25rem) !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: 100% !important;
+}
+
+.web-container .ui-cs-slider-wrap .ui-cs-card {
+    width: 100% !important;
+    max-width: none !important;
+}

@@ -41,7 +41,7 @@ const ROUTES = {
     '/mobile': 'mobile.html',
     '/development': 'development.html',
     '/software-engineering': 'software-engineering.html',
-    '/data-analytics': 'data-analytics.html',
+    '/data-analytics': 'data-analysis.html',
     '/ecommerce-strategy': 'ecommerce-strategy.html',
     '/product-design': 'product-design.html',
     '/graphic-design': 'graphic-design.html',

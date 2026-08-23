@@ -15,7 +15,7 @@ const SERVICES_STRIP = `
                 </div>
                 <div class="cs-services-strip cs-reveal">
                     <a href="web.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/web-dev.jpg" alt="" loading="lazy"><div><strong>Web Development</strong><span>2–4 week launch</span></div></a>
-                    <a href="data-analytics.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/seo-new.jpg" alt="" loading="lazy"><div><strong>SEO</strong><span>150% avg growth</span></div></a>
+                    <a href="data-analysis.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/seo-new.jpg" alt="" loading="lazy"><div><strong>SEO</strong><span>150% avg growth</span></div></a>
                     <a href="ecommerce-strategy.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/ppc.jpg" alt="" loading="lazy"><div><strong>PPC Ads</strong><span>3× ROI average</span></div></a>
                     <a href="product-design.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/social-media-new.jpg" alt="" loading="lazy"><div><strong>Social Media</strong><span>Engagement growth</span></div></a>
                 </div>

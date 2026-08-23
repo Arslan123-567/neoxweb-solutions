@@ -14,7 +14,7 @@ const pages = [
     { loc: 'web.html', changefreq: 'monthly', priority: '0.85' },
     { loc: 'development.html', changefreq: 'monthly', priority: '0.85' },
     { loc: 'mobile.html', changefreq: 'monthly', priority: '0.85' },
-    { loc: 'data-analytics.html', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'data-analysis.html', changefreq: 'monthly', priority: '0.85' },
     { loc: 'ecommerce-strategy.html', changefreq: 'monthly', priority: '0.85' },
     { loc: 'product-design.html', changefreq: 'monthly', priority: '0.85' },
     { loc: 'graphic-design.html', changefreq: 'monthly', priority: '0.85' },

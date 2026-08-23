@@ -49,7 +49,7 @@ const REMOVE_JS = [
 const SERVICE_PAGES = new Set([
     'web.html', 'development.html', 'mobile.html', 'ai.html', 'cloud.html',
     'software-engineering.html', 'it-consulting.html', 'application-modernization.html',
-    'data-analytics.html', 'ecommerce-strategy.html', 'product-design.html',
+    'data-analysis.html', 'ecommerce-strategy.html', 'product-design.html',
     'testing-qa.html', 'saas-platforms.html', 'services.html'
 ]);
 

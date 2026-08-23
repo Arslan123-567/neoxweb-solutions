@@ -23,7 +23,7 @@ const NexuraApp = (() => {
             href: 'studies.html',
             icon: 'bi-mortarboard-fill',
             label: 'Studies',
-            match: ['studies.html', 'about.html', 'team.html', 'it-consulting.html', 'data-analytics.html', 'product-design.html', 'testing-qa.html']
+            match: ['studies.html', 'about.html', 'team.html', 'it-consulting.html', 'data-analysis.html', 'product-design.html', 'testing-qa.html']
         },
         {
             href: 'industry.html',
@@ -63,7 +63,7 @@ const NexuraApp = (() => {
                 { href: 'mobile.html', icon: 'bi-phone-fill', label: 'Mobile Apps' },
                 { href: 'development.html', icon: 'bi-code-slash', label: 'Full-Stack Dev' },
                 { href: 'software-engineering.html', icon: 'bi-cpu-fill', label: 'Software Engineering' },
-                { href: 'data-analytics.html', icon: 'bi-graph-up-arrow', label: 'SEO & Analytics' },
+                { href: 'data-analysis.html', icon: 'bi-graph-up-arrow', label: 'SEO & Analytics' },
                 { href: 'ecommerce-strategy.html', icon: 'bi-megaphone-fill', label: 'PPC & E-commerce' },
                 { href: 'product-design.html', icon: 'bi-palette-fill', label: 'UI/UX Design' },
                 { href: 'testing-qa.html', icon: 'bi-shield-check', label: 'Testing & QA' },
@@ -173,7 +173,7 @@ const NexuraApp = (() => {
         }
     }
 
-    function injectHeader(page) {
+    function injectHeader() {
         if (document.getElementById('nxAppHeader')) return;
         const base = assetBase();
 
@@ -182,17 +182,16 @@ const NexuraApp = (() => {
         header.className = 'nx-app-header ui-mobile-header';
         header.innerHTML = `
             <a href="${base}index.html" class="ui-mobile-logo navbar__logo--nx" aria-label="NEOXWEB Home">
-                <img src="${base}assets/images/neoxweb/main-logo.jpeg?v=2" alt="NEOXWEB" class="navbar__logo-img navbar__logo-img--nx" width="160" height="64" loading="eager">
+                <img src="${base}assets/images/neoxweb/logo-neo-x-web.png?v=5" alt="NEOXWEB" class="navbar__logo-img navbar__logo-img--nx" width="160" height="64" loading="eager">
             </a>
             <div class="ui-mobile-header__actions">
-                <a href="${base}contact.html" class="ui-mobile-icon-btn ui-mobile-icon-btn--login" aria-label="Contact">
-                    <i class="fas fa-comments"></i>
-                </a>
-                <button type="button" class="ui-mobile-icon-btn" id="nxMobileSearch" aria-label="Search">
-                    <i class="fas fa-search"></i>
+                <a href="${base}contact.html" style="color:black"  class="ui-mobile-icon-btn ui-mobile-icon-btn--login" aria-label="Contact">
+<i class="bi bi-chat-text"></i>                </a>
+                <button type="button"  style="color:black" class="ui-mobile-icon-btn" id="nxMobileSearch" aria-label="Search">
+                  <i class="bi bi-search"></i>
                 </button>
-                <button type="button" class="ui-mobile-icon-btn" id="nxMobileMenu" aria-label="Open menu">
-                    <i class="fas fa-bars"></i>
+                <button type="button" style="color:black"  class="ui-mobile-icon-btn" id="nxMobileMenu" aria-label="Open menu">
+                  <i class="bi bi-list"></i>
                 </button>
             </div>
         `;
@@ -234,7 +233,6 @@ const NexuraApp = (() => {
                 </a>`
             ).join('');
             return `<div class="nx-drawer-section">
-                <div class="nx-drawer-section-title">${section.title}</div>
                 <div class="list-group list-group-flush">${items}</div>
             </div>`;
         }).join('');

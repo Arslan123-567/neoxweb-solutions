@@ -15,7 +15,7 @@ const footerHtml = `<footer class="site-footer site-footer--pro" role="contentin
                 ${link('web.html', 'Web Development')}
                 ${link('mobile.html', 'Mobile App Development')}
                 ${link('ecommerce-strategy.html', 'E-Commerce &amp; PPC')}
-                ${link('data-analytics.html', 'SEO &amp; Growth')}
+                ${link('data-analysis.html', 'SEO &amp; Growth')}
                 ${link('development.html', 'Custom Software Development')}
             </nav>
             <nav class="footer-uni__col" aria-label="Technology">

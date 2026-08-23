@@ -736,7 +736,7 @@ body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-m
     margin-top: 2rem !important;
 }
 
-body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-visual {
+html body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium:has(.web-hero-visual-icon) .web-hero-visual {
     display: none !important;
 }
 
@@ -807,6 +807,32 @@ body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-v
         font-size: 18px !important;
     }
 
+}
+
+@media screen and (max-width: 520px) {
+    body.neoxweb-site.data-analysis-page section.section-padding:has(.svc-showcase-grid) .svc-showcase-grid {
+        display: flex !important;
+        grid-template-columns: none !important;
+        grid-template-rows: none !important;
+        grid-auto-flow: column !important;
+        grid-auto-columns: unset !important;
+        gap: 0.9rem !important;
+        overflow-x: auto !important;
+        padding: 0 12% 0 0 !important;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .data-analysis-page .svc-showcase-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .data-analysis-page .svc-showcase-grid > .svc-showcase-card {
+        flex: 0 0 88% !important;
+        width: 88% !important;
+        min-width: 0 !important;
+        scroll-snap-align: start;
+    }
 }
 
 /* =========================================================
