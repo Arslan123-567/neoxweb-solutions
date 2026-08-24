@@ -44,6 +44,7 @@ body {
     linear-gradient(180deg, #0a0a0a 0%, #101010 100%);
   overflow-x: hidden;
 }
+
 body.web-container,
 .web-container,
 body.web-container {
@@ -279,14 +280,14 @@ table {
 
 .hero-section,
 .page-hero {
-  padding: 8rem 0 5rem;
+  padding: 0 0 5rem;
   position: relative;
 }
 
 /* Cinematic hero — full background network image + particles */
 .hero-section--cinematic {
   min-height: min(92vh, 920px);
-  padding: clamp(6rem, 12vw, 9rem) 0 clamp(4rem, 8vw, 6rem);
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(4rem, 8vw, 6rem);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1497,11 +1498,15 @@ table {
   .header-inner {
     gap: 1rem;
   }
-  .page-hero {
+  /* .page-hero {
     padding-top: 7rem;
-  }
+  } */
   .container {
     width: 100%
   }
+  .nx-page-hero{
+  padding-top: 0%;
+  margin: top 0 ;
+}
 }
 

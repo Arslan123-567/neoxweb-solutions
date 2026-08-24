@@ -14,7 +14,7 @@
 
 .web-hero > .container,
 .web-hero-grid {
-    padding-top: calc(var(--nav-h, 72px) + clamp(2.75rem, 5.5vw, 4.5rem));
+    padding-top: calc(var(--nav-h, 72px) + 0.5rem);
 }
 
 .web-hero::before {

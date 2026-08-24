@@ -9,6 +9,7 @@ body.neoxweb-site:not(.home-page) .hero-section--pro {
     display: flex !important;
     align-items: flex-start !important;
     padding: 0 0 clamp(2rem, 4vw, 2.75rem) !important;
+    margin-top: 0 !important;
     overflow: hidden !important;
     background: #000 !important;
     border-bottom: none !important;
@@ -48,7 +49,7 @@ body.neoxweb-site:not(.home-page) .hero-section--pro .nx-page-hero__inner {
     width: 100%;
     max-width: min(1200px, calc(100% - 2rem));
     margin-inline: auto;
-    padding-top: calc(var(--nav-h, 72px) + clamp(1.75rem, 4vw, 2.75rem)) !important;
+    padding-top: calc(var(--nav-h, 72px) + 0.5rem) !important;
     padding-inline: clamp(1rem, 3vw, 1.5rem);
 }
 
@@ -108,7 +109,7 @@ body.neoxweb-site:not(.home-page) .nx-page-hero .cs-container,
 body.neoxweb-site:not(.home-page) .nx-page-hero .contact-hero-inner {
     position: relative;
     z-index: 3;
-    padding-top: var(--nav-h, 72px);
+    padding-top: 0.75rem;
 }
 
 /* Contact — sirf top hero, full-page bg band */

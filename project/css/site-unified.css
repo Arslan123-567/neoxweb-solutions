@@ -885,7 +885,7 @@ body.neoxweb-site.case-study-page:has(.cs-portfolio-grid) .cs-container {
     width: 100%;
     max-width: min(1200px, 100%);
     padding-inline: clamp(1rem, 2.5vw, 1.5rem);
-    padding-top: calc(var(--nav-h, 72px) + clamp(2.75rem, 5.5vw, 4.5rem)) !important;
+    padding-top: calc(var(--nav-h, 72px) + 0.5rem) !important;
     text-align: left;
     box-sizing: border-box;
 }
@@ -908,7 +908,7 @@ body.neoxweb-site.case-study-page:has(.cs-portfolio-grid) .cs-container {
 
 .neoxweb-site .web-hero > .container,
 .neoxweb-site .web-hero .web-hero-grid {
-    padding-top: calc(var(--nav-h, 72px) + clamp(2.75rem, 5.5vw, 4.5rem)) !important;
+    padding-top: calc(var(--nav-h, 72px) + 0.5rem) !important;
 }
 
 .neoxweb-site .web-hero-copy,

@@ -681,7 +681,7 @@ body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-g
     max-width: 1180px !important;
     min-height: min(760px, 88vh) !important;
     margin: 0 auto !important;
-    padding: calc(var(--nav-h, 72px) + 2rem) 0 4rem !important;
+    padding: calc(var(--nav-h, 72px) + 0.5rem) 0 4rem !important;
 }
 
 body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-copy {
@@ -749,7 +749,7 @@ html body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium:has(.w
     body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-grid {
         width: min(100% - 1.5rem, 560px) !important;
         min-height: 680px !important;
-        padding-top: calc(var(--nav-h, 72px) + 2rem) !important;
+        padding-top: calc(var(--nav-h, 72px) + 0.5rem) !important;
     }
 
     body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-copy h1 {

@@ -1766,7 +1766,7 @@
   body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-grid {
     display: block !important;
     min-height: 0 !important;
-    padding: calc(var(--nav-h, 72px) + 2rem) 0 5rem !important;
+    padding: calc(var(--nav-h, 72px) + 0.5rem) 0 5rem !important;
   }
 
   body.neoxweb-site.data-analysis-page .web-hero.hero-section--premium .web-hero-copy {
