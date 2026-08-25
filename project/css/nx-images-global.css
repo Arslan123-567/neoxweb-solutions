@@ -78,6 +78,37 @@
     margin: 0;
 }
 
+.neoxweb-site .nx-img-strip__media img,
+.neoxweb-site .nx-img-strip__card img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+}
+
+.neoxweb-site img.nx-photo,
+.neoxweb-site img.visual-art,
+.neoxweb-site .neox-service-card__media img,
+.neoxweb-site .service-panel__photo img,
+.neoxweb-site .project-card .visual-art-wrap img,
+.neoxweb-site .svc-showcase-card__img img,
+.neoxweb-site .ui-cs-card__media img,
+.neoxweb-site .cs-gallery-full__item img,
+.neoxweb-site .ui-resource-card .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+}
+
 /* Hero background images — cover, anchored right */
 .neoxweb-site .hero-tech-bg img,
 .neoxweb-site .hero-neoxweb-bg img {

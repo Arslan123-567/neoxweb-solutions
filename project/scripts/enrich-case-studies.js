@@ -14,10 +14,10 @@ const SERVICES_STRIP = `
                     <h2>More ways we help businesses grow</h2>
                 </div>
                 <div class="cs-services-strip cs-reveal">
-                    <a href="web.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/web-dev.jpg" alt="" loading="lazy"><div><strong>Web Development</strong><span>2–4 week launch</span></div></a>
-                    <a href="data-analysis.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/seo-new.jpg" alt="" loading="lazy"><div><strong>SEO</strong><span>150% avg growth</span></div></a>
-                    <a href="ecommerce-strategy.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/ppc.jpg" alt="" loading="lazy"><div><strong>PPC Ads</strong><span>3× ROI average</span></div></a>
-                    <a href="product-design.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/social-media-new.jpg" alt="" loading="lazy"><div><strong>Social Media</strong><span>Engagement growth</span></div></a>
+                    <a href="web.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/e-commerce.png" alt="" loading="lazy"><div><strong>Web Development</strong><span>2–4 week launch</span></div></a>
+                    <a href="data-analysis.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/seo.jpg" alt="" loading="lazy"><div><strong>SEO</strong><span>150% avg growth</span></div></a>
+                    <a href="ecommerce-strategy.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/pay-pal-click.png" alt="" loading="lazy"><div><strong>PPC Ads</strong><span>3× ROI average</span></div></a>
+                    <a href="product-design.html" class="cs-service-chip" data-app-link="1"><img src="assets/images/neoxweb/social-media.png" alt="" loading="lazy"><div><strong>Social Media</strong><span>Engagement growth</span></div></a>
                 </div>
             </div>
         </section>
@@ -42,12 +42,12 @@ const SERVICES_STRIP = `
 const SUPPLEMENTS = {
     'case-study.html': {
         galleryExtra: `
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Mobile learner experience" loading="lazy"><span>Mobile Experience</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/ppc.jpg" alt="Enrollment funnel analytics" loading="lazy"><span>Enrollment Funnel</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/social-media.png" alt="Mobile learner experience" loading="lazy"><span>Mobile Experience</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/pay-pal-click.png" alt="Enrollment funnel analytics" loading="lazy"><span>Enrollment Funnel</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-branding.jpg" alt="Design system components" loading="lazy"><span>Design System</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/hero-bg-new.jpg" alt="Cloud infrastructure dashboard" loading="lazy"><span>Cloud Dashboard</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-seo.jpg" alt="Performance monitoring" loading="lazy"><span>Performance Monitoring</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-ppc.jpg" alt="Subscription analytics" loading="lazy"><span>Subscription Analytics</span></div>`,
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-pay-pal-click.png" alt="Subscription analytics" loading="lazy"><span>Subscription Analytics</span></div>`,
         deliverables: [
             ['fa-sitemap', 'Platform Architecture', 'Cloud-native microservices with zero-downtime migration from legacy monolith.'],
             ['fa-palette', 'Design System', '200+ reusable UI components deployed across web, tablet, and mobile.'],
@@ -78,12 +78,12 @@ const SUPPLEMENTS = {
     },
     'case-study-seo.html': {
         galleryExtra: `
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Content strategy dashboard" loading="lazy"><span>Content Strategy</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/social-media.png" alt="Content strategy dashboard" loading="lazy"><span>Content Strategy</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-branding.jpg" alt="Category page optimization" loading="lazy"><span>Category Pages</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/ppc.jpg" alt="SERP visibility report" loading="lazy"><span>SERP Visibility</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/pay-pal-click.png" alt="SERP visibility report" loading="lazy"><span>SERP Visibility</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/hero-bg-new.jpg" alt="Mobile SEO performance" loading="lazy"><span>Mobile SEO</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-web.jpg" alt="Site architecture map" loading="lazy"><span>Site Architecture</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-ppc.jpg" alt="Conversion tracking setup" loading="lazy"><span>Conversion Tracking</span></div>`,
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/e-commerce.png" alt="Site architecture map" loading="lazy"><span>Site Architecture</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-pay-pal-click.png" alt="Conversion tracking setup" loading="lazy"><span>Conversion Tracking</span></div>`,
         deliverables: [
             ['fa-search', 'Technical SEO Audit', 'Full crawl analysis, indexation fixes, and schema implementation.'],
             ['fa-file-lines', 'Content Roadmap', 'Intent-mapped articles, category pages, and collection landing pages.'],
@@ -114,11 +114,11 @@ const SUPPLEMENTS = {
     },
     'case-study-ppc.html': {
         galleryExtra: `
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Meta ads creative variants" loading="lazy"><span>Meta Ad Creatives</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/social-media.png" alt="Meta ads creative variants" loading="lazy"><span>Meta Ad Creatives</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-branding.jpg" alt="Brand-aligned ad assets" loading="lazy"><span>Brand Ad Assets</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/seo-new.jpg" alt="GA4 conversion tracking" loading="lazy"><span>GA4 Tracking</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/seo.jpg" alt="GA4 conversion tracking" loading="lazy"><span>GA4 Tracking</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/hero-bg-new.jpg" alt="Regional targeting map" loading="lazy"><span>Regional Targeting</span></div>
-                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-web.jpg" alt="Lead qualification flow" loading="lazy"><span>Lead Qualification</span></div>
+                    <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/e-commerce.png" alt="Lead qualification flow" loading="lazy"><span>Lead Qualification</span></div>
                     <div class="cs-gallery-full__item"><img src="assets/images/neoxweb/portfolio-seo.jpg" alt="Weekly optimization report" loading="lazy"><span>Weekly Reports</span></div>`,
         deliverables: [
             ['fa-crosshairs', 'Audience Segmentation', 'Region, household profile, and purchase-intent targeting for solar leads.'],

@@ -222,19 +222,19 @@ function restoreResources() {
                 </div>
                 <div class="ui-resources-grid ui-fade-up">
                     <article class="ui-resource-card">
-                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/seo-new.jpg" alt="Pakistan SEO guide" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/seo.jpg" alt="Pakistan SEO guide" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                         <div class="body"><span class="type">Guide</span><h4>SEO for Pakistani Businesses — Rank on Google in 2025</h4><span class="meta">Local keywords, Google Business, Urdu/English content</span></div>
                     </article>
                     <article class="ui-resource-card">
-                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/web-dev.jpg" alt="Website launch guide" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/e-commerce.png" alt="Website launch guide" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                         <div class="body"><span class="type">Guide</span><h4>Launch Your Business Website in 2–4 Weeks</h4><span class="meta">Planning, design, development &amp; go-live checklist</span></div>
                     </article>
                     <article class="ui-resource-card">
-                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/ppc.jpg" alt="PPC guide Pakistan" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/pay-pal-click.png" alt="PPC guide Pakistan" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                         <div class="body"><span class="type">Guide</span><h4>Google Ads for Local Leads in Pakistan</h4><span class="meta">Budget, targeting, landing pages &amp; ROI tracking</span></div>
                     </article>
                     <article class="ui-resource-card">
-                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Social media guide" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                        <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/social-media.png" alt="Social media guide" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                         <div class="body"><span class="type">Guide</span><h4>Social Media Growth for Pakistani Brands</h4><span class="meta">Instagram, Facebook, reels &amp; engagement strategy</span></div>
                     </article>
                 </div>

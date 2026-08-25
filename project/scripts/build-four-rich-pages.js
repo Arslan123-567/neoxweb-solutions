@@ -141,7 +141,7 @@ function patchResources(html) {
 
 function patchWeb(html) {
     html = html.replace(
-        "background-image:url('assets/images/neoxweb/web-dev.jpg')",
+        "background-image:url('assets/images/neoxweb/e-commerce.png')",
         "background-image:url('assets/images/web-dev/web-magnify.png')"
     );
 

@@ -5,14 +5,14 @@
     var CDN = 'https://neoxweb.pages.dev/static/images/';
 
     var SVG_FALLBACK = {
-        'web-dev.jpg': 'web-dev.svg',
-        'seo-new.jpg': 'seo-new.svg',
-        'ppc.jpg': 'ppc.svg',
-        'social-media-new.jpg': 'social-media-new.svg',
+        'e-commerce.png': 'web-dev.svg',
+        'seo.jpg': 'seo-new.svg',
+        'pay-pal-click.png': 'ppc.svg',
+        'social-media.png': 'social-media-new.svg',
         'portfolio-branding.jpg': 'portfolio-branding.svg',
         'portfolio-web.jpg': 'portfolio-web.svg',
         'portfolio-seo.jpg': 'portfolio-seo.svg',
-        'portfolio-ppc.jpg': 'portfolio-ppc.svg',
+        'portfolio-pay-pal-click.png': 'portfolio-ppc.svg',
         'hero-bg-new.jpg': 'hero-bg-new.svg',
         'hero-tech-bg.png': 'hero-tech-bg.svg'
     };

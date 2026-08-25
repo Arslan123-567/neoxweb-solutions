@@ -9,8 +9,8 @@ const CDN = 'https://neoxweb.pages.dev/static/images/';
 const skip = new Set(['navbar.html', 'unified-header.html', 'unified-footer.html', 'oauth-callback.html']);
 
 const files = [
-    'web-dev.jpg', 'seo-new.jpg', 'ppc.jpg', 'social-media-new.jpg',
-    'portfolio-branding.jpg', 'portfolio-web.jpg', 'portfolio-seo.jpg', 'portfolio-ppc.jpg',
+    'e-commerce.png', 'seo.jpg', 'pay-pal-click.png', 'social-media.png',
+    'portfolio-branding.jpg', 'portfolio-web.jpg', 'portfolio-seo.jpg', 'portfolio-pay-pal-click.png',
     'hero-bg-new.jpg', 'logo.png', 'logo-large.jpg'
 ];
 

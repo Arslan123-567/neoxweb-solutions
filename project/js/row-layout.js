@@ -3,10 +3,10 @@
  */
 (function () {
     var IMGS = [
-        'assets/images/neoxweb/web-dev.jpg',
-        'assets/images/neoxweb/seo-new.jpg',
-        'assets/images/neoxweb/ppc.jpg',
-        'assets/images/neoxweb/social-media-new.jpg',
+        'assets/images/neoxweb/e-commerce.png',
+        'assets/images/neoxweb/seo.jpg',
+        'assets/images/neoxweb/pay-pal-click.png',
+        'assets/images/neoxweb/social-media.png',
         'assets/images/neoxweb/portfolio-branding.jpg',
         'assets/images/neoxweb/portfolio-web.jpg'
     ];

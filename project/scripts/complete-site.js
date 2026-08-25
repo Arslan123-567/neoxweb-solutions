@@ -27,7 +27,7 @@ const NEW_PAGES = {
         tag: 'Social Media Marketing',
         h1: 'Grow your audience on <span class="highlight">Instagram, Facebook &amp; TikTok</span>.',
         lead: 'Content calendars, paid social campaigns, and community management that turn followers into loyal customers.',
-        image: 'social-media-new.jpg',
+        image: 'social-media.png',
         metrics: ['Content strategy', 'Paid social', 'Community mgmt'],
         floats: ['Viral Reels', '+200% Engagement'],
         tech: ['Instagram', 'Facebook Ads', 'TikTok', 'LinkedIn', 'Content Calendar', 'Analytics'],

@@ -5,21 +5,21 @@
     var DEFAULT_HERO = 'assets/images/neoxweb/hero-bg-new.jpg';
 
     var SERVICE_HERO_IMAGES = {
-        web: 'web-dev.jpg',
+        web: 'e-commerce.png',
         mobile: 'portfolio-web.jpg',
-        development: 'web-dev.jpg',
-        'saas-platforms': 'web-dev.jpg',
-        'ecommerce-strategy': 'portfolio-ppc.jpg',
-        cloud: 'web-dev.jpg',
-        'software-engineering': 'web-dev.jpg',
-        'testing-qa': 'web-dev.jpg',
+        development: 'e-commerce.png',
+        'saas-platforms': 'e-commerce.png',
+        'ecommerce-strategy': 'portfolio-pay-pal-click.png',
+        cloud: 'e-commerce.png',
+        'software-engineering': 'e-commerce.png',
+        'testing-qa': 'e-commerce.png',
         'application-modernization': 'portfolio-web.jpg',
-        'data-analytics': 'seo-new.jpg',
-        ai: 'seo-new.jpg',
-        'it-consulting': 'seo-new.jpg',
-        'product-design': 'social-media-new.jpg',
+        'data-analytics': 'seo.jpg',
+        ai: 'seo.jpg',
+        'it-consulting': 'seo.jpg',
+        'product-design': 'social-media.png',
         'graphic-design': 'portfolio-branding.jpg',
-        'social-media-marketing': 'social-media-new.jpg',
+        'social-media-marketing': 'social-media.png',
         'video-editing': 'portfolio-web.jpg'
     };
 

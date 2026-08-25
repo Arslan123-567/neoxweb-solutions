@@ -7,14 +7,14 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 
 const REPLACEMENTS = [
-    ['assets/images/neoxweb/web-dev.jpg', 'assets/images/neoxweb/web-dev.svg'],
-    ['assets/images/neoxweb/seo-new.jpg', 'assets/images/neoxweb/seo-new.svg'],
-    ['assets/images/neoxweb/ppc.jpg', 'assets/images/neoxweb/ppc.svg'],
-    ['assets/images/neoxweb/social-media-new.jpg', 'assets/images/neoxweb/social-media-new.svg'],
+    ['assets/images/neoxweb/e-commerce.png', 'assets/images/neoxweb/web-dev.svg'],
+    ['assets/images/neoxweb/seo.jpg', 'assets/images/neoxweb/seo-new.svg'],
+    ['assets/images/neoxweb/pay-pal-click.png', 'assets/images/neoxweb/ppc.svg'],
+    ['assets/images/neoxweb/social-media.png', 'assets/images/neoxweb/social-media-new.svg'],
     ['assets/images/neoxweb/portfolio-branding.jpg', 'assets/images/neoxweb/portfolio-branding.svg'],
     ['assets/images/neoxweb/portfolio-web.jpg', 'assets/images/neoxweb/portfolio-web.svg'],
     ['assets/images/neoxweb/portfolio-seo.jpg', 'assets/images/neoxweb/portfolio-seo.svg'],
-    ['assets/images/neoxweb/portfolio-ppc.jpg', 'assets/images/neoxweb/portfolio-ppc.svg'],
+    ['assets/images/neoxweb/portfolio-pay-pal-click.png', 'assets/images/neoxweb/portfolio-ppc.svg'],
     ['assets/images/neoxweb/hero-bg-new.jpg', 'assets/images/neoxweb/hero-bg-new.svg'],
     ['assets/images/neoxweb/hero-tech-bg.png', 'assets/images/neoxweb/hero-tech-bg.svg'],
     ['assets/images/neoxweb/logo-nx-mark.jpg', 'assets/images/neoxweb/logo-unified-mark.svg'],

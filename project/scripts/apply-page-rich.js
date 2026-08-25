@@ -32,10 +32,10 @@ const BLOCKS = {
                     <p>From web platforms to SEO campaigns — see the quality we deliver for clients across Pakistan and globally.</p>
                 </div>
                 <div class="pr-media-grid pr-reveal">
-                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/web-dev.jpg" alt="Web development" loading="lazy"><span>Web Dev</span></div>
-                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/seo-new.jpg" alt="SEO" loading="lazy"><span>SEO</span></div>
-                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/ppc.jpg" alt="PPC" loading="lazy"><span>PPC</span></div>
-                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Social media" loading="lazy"><span>Social</span></div>
+                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/e-commerce.png" alt="Web development" loading="lazy"><span>Web Dev</span></div>
+                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/seo.jpg" alt="SEO" loading="lazy"><span>SEO</span></div>
+                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/pay-pal-click.png" alt="PPC" loading="lazy"><span>PPC</span></div>
+                    <div class="pr-media-grid__item"><img src="assets/images/neoxweb/social-media.png" alt="Social media" loading="lazy"><span>Social</span></div>
                 </div>
             </div>
         </section>`,
@@ -50,19 +50,19 @@ const BLOCKS = {
                 </div>
                 <div class="neox-service-cards pr-reveal">
                     <article class="neox-service-card">
-                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/web-dev.jpg" alt="Web Development" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-code"></i> Web</span></div>
+                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/e-commerce.png" alt="Web Development" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-code"></i> Web</span></div>
                         <div class="neox-service-card__body"><h3>Custom Websites</h3><p>High-converting sites that turn visitors into customers.</p><a href="web.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
                     </article>
                     <article class="neox-service-card">
-                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/seo-new.jpg" alt="SEO" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-search"></i> SEO</span></div>
+                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/seo.jpg" alt="SEO" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-search"></i> SEO</span></div>
                         <div class="neox-service-card__body"><h3>Search Engine Optimization</h3><p>Boost Google rankings and organic traffic.</p><a href="data-analysis.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
                     </article>
                     <article class="neox-service-card">
-                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/ppc.jpg" alt="PPC" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-chart-line"></i> PPC</span></div>
+                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/pay-pal-click.png" alt="PPC" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-chart-line"></i> PPC</span></div>
                         <div class="neox-service-card__body"><h3>Pay Per Click Ads</h3><p>Instant leads with targeted campaigns.</p><a href="ecommerce-strategy.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
                     </article>
                     <article class="neox-service-card">
-                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Social Media" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-share-alt"></i> Social</span></div>
+                        <div class="neox-service-card__media"><img src="assets/images/neoxweb/social-media.png" alt="Social Media" loading="lazy"><span class="neox-service-card__badge"><i class="fas fa-share-alt"></i> Social</span></div>
                         <div class="neox-service-card__body"><h3>Social Media Marketing</h3><p>Grow followers and engagement.</p><a href="product-design.html">Learn More <i class="fas fa-arrow-right"></i></a></div>
                     </article>
                 </div>
@@ -129,7 +129,7 @@ const BLOCKS = {
                 <div class="pr-mini-cases pr-reveal">
                     <a href="case-study.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-web.jpg" alt="EdTech case" loading="lazy"><div><h4>3× Revenue — EdTech Platform</h4><p>Platform modernization for global leader</p></div></a>
                     <a href="case-study-seo.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-seo.jpg" alt="SEO case" loading="lazy"><div><h4>150% Traffic — Dezara Fashion</h4><p>Technical SEO &amp; content strategy</p></div></a>
-                    <a href="case-study-ppc.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-ppc.jpg" alt="PPC case" loading="lazy"><div><h4>3× ROI — BoltSolar PPC</h4><p>Targeted ads &amp; landing pages</p></div></a>
+                    <a href="case-study-ppc.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-pay-pal-click.png" alt="PPC case" loading="lazy"><div><h4>3× ROI — BoltSolar PPC</h4><p>Targeted ads &amp; landing pages</p></div></a>
                 </div>
             </div>
         </section>`,

@@ -127,7 +127,7 @@ function buildTechPage(tech) {
                     </div>
                 </div>
                 <div class="web-hero-visual fade-up delay-1">
-                    <div class="web-hero-visual-icon" aria-hidden="true"><img src="https://neoxweb.pages.dev/static/images/web-dev.jpg" alt="" class="visual-art visual-art--hero nx-photo" loading="lazy"></div>
+                    <div class="web-hero-visual-icon" aria-hidden="true"><img src="https://neoxweb.pages.dev/static/images/e-commerce.png" alt="" class="visual-art visual-art--hero nx-photo" loading="lazy"></div>
                 </div>
             </div>
         </section>

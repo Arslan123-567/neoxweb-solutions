@@ -7,14 +7,14 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 
 const POOL = [
-    'assets/images/neoxweb/web-dev.jpg',
-    'assets/images/neoxweb/portfolio-web.jpg',
-    'assets/images/neoxweb/seo-new.jpg',
-    'assets/images/neoxweb/social-media-new.jpg',
-    'assets/images/neoxweb/ppc.jpg',
+    'assets/images/neoxweb/e-commerce.png',
+    'assets/images/neoxweb/e-commerce.png',
+    'assets/images/neoxweb/seo.jpg',
+    'assets/images/neoxweb/social-media.png',
+    'assets/images/neoxweb/pay-pal-click.png',
     'assets/images/neoxweb/portfolio-branding.jpg',
     'assets/images/neoxweb/portfolio-seo.jpg',
-    'assets/images/neoxweb/portfolio-ppc.jpg',
+    'assets/images/neoxweb/portfolio-pay-pal-click.png',
     'assets/images/neoxweb/hero-bg-new.jpg',
 ];
 
@@ -22,7 +22,7 @@ const PAGE_CONFIG = {
     'software-engineering.html': {
         tag: 'Project gallery',
         title: 'Engineering work at a glance',
-        images: ['web-dev.jpg', 'portfolio-web.jpg', 'seo-new.jpg', 'ppc.jpg', 'social-media-new.jpg', 'hero-bg-new.jpg'],
+        images: ['e-commerce.png', 'e-commerce.png', 'seo.jpg', 'pay-pal-click.png', 'social-media.png', 'hero-bg-new.jpg'],
         captions: [
             ['Custom web apps', 'Scalable platforms and APIs'],
             ['Mobile engineering', 'Native and cross-platform builds'],
@@ -35,7 +35,7 @@ const PAGE_CONFIG = {
     'cloud.html': {
         tag: 'Cloud gallery',
         title: 'Cloud infrastructure and deployments',
-        images: ['web-dev.jpg', 'seo-new.jpg', 'portfolio-web.jpg', 'ppc.jpg', 'social-media-new.jpg', 'hero-bg-new.jpg'],
+        images: ['e-commerce.png', 'seo.jpg', 'e-commerce.png', 'pay-pal-click.png', 'social-media.png', 'hero-bg-new.jpg'],
         captions: [
             ['AWS & Azure', 'Multi-cloud architecture'],
             ['Kubernetes', 'Container orchestration'],
@@ -48,7 +48,7 @@ const PAGE_CONFIG = {
     'ai.html': {
         tag: 'AI gallery',
         title: 'AI and automation deliverables',
-        images: ['seo-new.jpg', 'web-dev.jpg', 'social-media-new.jpg', 'portfolio-web.jpg', 'ppc.jpg', 'hero-bg-new.jpg'],
+        images: ['seo.jpg', 'e-commerce.png', 'social-media.png', 'e-commerce.png', 'pay-pal-click.png', 'hero-bg-new.jpg'],
         captions: [
             ['ML models', 'Predictive analytics'],
             ['Chatbots', 'Conversational AI'],
@@ -61,7 +61,7 @@ const PAGE_CONFIG = {
     'data-analysis.html': {
         tag: 'Analytics gallery',
         title: 'Data and reporting highlights',
-        images: ['seo-new.jpg', 'portfolio-seo.jpg', 'ppc.jpg', 'web-dev.jpg', 'social-media-new.jpg', 'portfolio-ppc.jpg'],
+        images: ['seo.jpg', 'portfolio-seo.jpg', 'pay-pal-click.png', 'e-commerce.png', 'social-media.png', 'portfolio-pay-pal-click.png'],
         captions: [
             ['Dashboards', 'Executive KPI views'],
             ['SEO analytics', 'Traffic and ranking data'],
@@ -74,7 +74,7 @@ const PAGE_CONFIG = {
     'application-modernization.html': {
         tag: 'Modernization gallery',
         title: 'Legacy to modern transformations',
-        images: ['web-dev.jpg', 'portfolio-web.jpg', 'seo-new.jpg', 'hero-bg-new.jpg', 'ppc.jpg', 'social-media-new.jpg'],
+        images: ['e-commerce.png', 'e-commerce.png', 'seo.jpg', 'hero-bg-new.jpg', 'pay-pal-click.png', 'social-media.png'],
         captions: [
             ['Legacy migration', 'Monolith to microservices'],
             ['UI refresh', 'Modern responsive interfaces'],
@@ -87,7 +87,7 @@ const PAGE_CONFIG = {
     'it-consulting.html': {
         tag: 'Consulting gallery',
         title: 'Advisory and strategy outcomes',
-        images: ['seo-new.jpg', 'web-dev.jpg', 'portfolio-web.jpg', 'hero-bg-new.jpg', 'ppc.jpg', 'social-media-new.jpg'],
+        images: ['seo.jpg', 'e-commerce.png', 'e-commerce.png', 'hero-bg-new.jpg', 'pay-pal-click.png', 'social-media.png'],
         captions: [
             ['IT audits', 'Infrastructure assessment'],
             ['Roadmaps', 'Digital transformation plans'],
@@ -100,7 +100,7 @@ const PAGE_CONFIG = {
     'social-media-marketing.html': {
         tag: 'Social gallery',
         title: 'Campaign creative and results',
-        images: ['social-media-new.jpg', 'portfolio-branding.jpg', 'portfolio-web.jpg', 'seo-new.jpg', 'ppc.jpg', 'portfolio-seo.jpg'],
+        images: ['social-media.png', 'portfolio-branding.jpg', 'e-commerce.png', 'seo.jpg', 'pay-pal-click.png', 'portfolio-seo.jpg'],
         captions: [
             ['Social creatives', 'Platform-native content'],
             ['Brand campaigns', 'Consistent visual identity'],
@@ -113,7 +113,7 @@ const PAGE_CONFIG = {
     'graphic-design.html': {
         tag: 'Design gallery',
         title: 'Brand and visual design work',
-        images: ['portfolio-branding.jpg', 'social-media-new.jpg', 'portfolio-web.jpg', 'seo-new.jpg', 'ppc.jpg', 'hero-bg-new.jpg'],
+        images: ['portfolio-branding.jpg', 'social-media.png', 'e-commerce.png', 'seo.jpg', 'pay-pal-click.png', 'hero-bg-new.jpg'],
         captions: [
             ['Brand identity', 'Logo and style guides'],
             ['Social graphics', 'Posts and stories'],
@@ -126,7 +126,7 @@ const PAGE_CONFIG = {
     'product-design.html': {
         tag: 'UX gallery',
         title: 'Product and UX design deliverables',
-        images: ['social-media-new.jpg', 'portfolio-web.jpg', 'portfolio-branding.jpg', 'web-dev.jpg', 'seo-new.jpg', 'hero-bg-new.jpg'],
+        images: ['social-media.png', 'e-commerce.png', 'portfolio-branding.jpg', 'e-commerce.png', 'seo.jpg', 'hero-bg-new.jpg'],
         captions: [
             ['Wireframes', 'User flow mapping'],
             ['Prototypes', 'Interactive Figma builds'],
@@ -139,7 +139,7 @@ const PAGE_CONFIG = {
     'video-editing.html': {
         tag: 'Video gallery',
         title: 'Video production highlights',
-        images: ['portfolio-web.jpg', 'social-media-new.jpg', 'portfolio-branding.jpg', 'ppc.jpg', 'seo-new.jpg', 'hero-bg-new.jpg'],
+        images: ['e-commerce.png', 'social-media.png', 'portfolio-branding.jpg', 'pay-pal-click.png', 'seo.jpg', 'hero-bg-new.jpg'],
         captions: [
             ['Brand films', 'Corporate storytelling'],
             ['Social reels', 'Short-form content'],
@@ -152,7 +152,7 @@ const PAGE_CONFIG = {
     'testing-qa.html': {
         tag: 'QA gallery',
         title: 'Quality assurance in action',
-        images: ['web-dev.jpg', 'portfolio-web.jpg', 'seo-new.jpg', 'ppc.jpg', 'social-media-new.jpg', 'hero-bg-new.jpg'],
+        images: ['e-commerce.png', 'e-commerce.png', 'seo.jpg', 'pay-pal-click.png', 'social-media.png', 'hero-bg-new.jpg'],
         captions: [
             ['Test automation', 'Selenium and Playwright'],
             ['Regression suites', 'Release confidence'],

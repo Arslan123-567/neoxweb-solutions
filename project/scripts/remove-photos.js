@@ -4,24 +4,24 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 
 const heroIcons = {
-    'web-dev.jpg': 'fa-code',
-    'seo-new.jpg': 'fa-chart-line',
-    'ppc.jpg': 'fa-bullhorn',
+    'e-commerce.png': 'fa-code',
+    'seo.jpg': 'fa-chart-line',
+    'pay-pal-click.png': 'fa-bullhorn',
     'portfolio-web.jpg': 'fa-globe',
     'portfolio-seo.jpg': 'fa-search',
-    'portfolio-ppc.jpg': 'fa-ad',
+    'portfolio-pay-pal-click.png': 'fa-ad',
     'portfolio-branding.jpg': 'fa-palette',
     'logo-large.jpg': 'fa-lightbulb',
-    'social-media-new.jpg': 'fa-share-alt',
+    'social-media.png': 'fa-share-alt',
     'hero-bg-new.jpg': 'fa-layer-group'
 };
 
 const teamIcons = {
-    'seo-new.jpg': 'fa-search',
-    'web-dev.jpg': 'fa-code',
+    'seo.jpg': 'fa-search',
+    'e-commerce.png': 'fa-code',
     'portfolio-branding.jpg': 'fa-palette',
-    'ppc.jpg': 'fa-chart-line',
-    'social-media-new.jpg': 'fa-share-alt'
+    'pay-pal-click.png': 'fa-chart-line',
+    'social-media.png': 'fa-share-alt'
 };
 
 function iconPlaceholder(icon, extraClass) {

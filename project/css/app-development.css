@@ -7,7 +7,7 @@
   isolation: isolate;
   background:
     linear-gradient(90deg, rgba(3, 10, 7, 0.95), rgba(3, 10, 7, 0.7)),
-    url("assets/images/neoxweb/app-development.jpg") center/cover no-repeat;
+    url("assets/images/neoxweb/app-development.png") center/cover no-repeat;
 }
 .app-page .app-hero::after {
   content: "";

@@ -6,10 +6,10 @@
     var DEFAULT_HERO = 'assets/images/neoxweb/hero-bg-new.jpg';
     var IMGS = [
         'assets/images/neoxweb/hero-bg-new.jpg',
-        'assets/images/neoxweb/web-dev.jpg',
-        'assets/images/neoxweb/seo-new.jpg',
-        'assets/images/neoxweb/ppc.jpg',
-        'assets/images/neoxweb/social-media-new.jpg'
+        'assets/images/neoxweb/e-commerce.png',
+        'assets/images/neoxweb/seo.jpg',
+        'assets/images/neoxweb/pay-pal-click.png',
+        'assets/images/neoxweb/social-media.png'
     ];
 
     function imgFor(i) {

@@ -50,7 +50,7 @@ const CASE_STUDIES = `
                 <div class="ui-services-intro ui-fade-up"><span class="ui-section-tag">Case Studies</span><h2>Proven results for real clients</h2></div>
                 <div class="nx-stack-cards ui-fade-up">
                     <a href="case-study-seo.html" class="nx-stack-card"><img src="assets/images/neoxweb/portfolio-seo.jpg" alt="" loading="lazy"><div class="nx-stack-card__body"><span class="nx-tag">SEO</span><h3>150% Traffic — Dezara Fashion</h3><p>Technical SEO &amp; content strategy for Pakistani fashion brand.</p><span class="nx-stack-card__link">View case study →</span></div></a>
-                    <a href="case-study-ppc.html" class="nx-stack-card"><img src="assets/images/neoxweb/portfolio-ppc.jpg" alt="" loading="lazy"><div class="nx-stack-card__body"><span class="nx-tag">PPC</span><h3>3× ROI — BoltSolar</h3><p>Google Ads &amp; landing pages for solar leads across Pakistan.</p><span class="nx-stack-card__link">View case study →</span></div></a>
+                    <a href="case-study-ppc.html" class="nx-stack-card"><img src="assets/images/neoxweb/portfolio-pay-pal-click.png" alt="" loading="lazy"><div class="nx-stack-card__body"><span class="nx-tag">PPC</span><h3>3× ROI — BoltSolar</h3><p>Google Ads &amp; landing pages for solar leads across Pakistan.</p><span class="nx-stack-card__link">View case study →</span></div></a>
                 </div>
             </div>
         </section>`;
@@ -77,17 +77,17 @@ const PAGES = {
         tag: 'Website Development',
         title: 'Custom Web Design and <span class="ui-gradient-text">Development Services</span>',
         lead: 'Forward-thinking businesses in Pakistan know the power of web technologies to drive growth. Partner with NEOXWEB for seamless performance, scalable websites, and resilient digital infrastructure.',
-        bg: 'web-dev.jpg',
+        bg: 'e-commerce.png',
         pains: ['A slow, clunky website that frustrates visitors and hurts Google rankings', 'Limited control over your backend, slowing down updates and innovation', 'No SEO or analytics — missing leads and business intelligence', 'Outdated design that fails on mobile and loses customers to competitors'],
         intro: 'Leveraging a consulting-led approach, our experts analyze your objectives, craft strategic plans, and deliver high-performance web solutions. We blend world-class UI/UX with responsive design — from simple business sites to e-commerce and SaaS platforms across Lahore, Karachi, and Islamabad.',
         verticals: [
             ['portfolio-web.jpg', 'Website Revamp & Redesign', 'Transform dated websites into high-converting performers with personalized content, SEO-optimized landing pages, and modern UX.'],
             ['hero-bg-new.jpg', 'Website Migration', 'Move your domain, hosting, or platform with zero downtime. We preserve SEO, SSL, analytics, and user experience throughout.'],
-            ['seo-new.jpg', 'Maintenance & Optimization', 'Proactive monitoring, speed enhancements, security updates, and content refreshes to keep your site at peak performance.'],
-            ['web-dev.jpg', 'E-Commerce Development', 'Custom WooCommerce, Shopify &amp; headless stores with JazzCash, EasyPaisa, and optimized checkout for Pakistani shoppers.'],
+            ['seo.jpg', 'Maintenance & Optimization', 'Proactive monitoring, speed enhancements, security updates, and content refreshes to keep your site at peak performance.'],
+            ['e-commerce.png', 'E-Commerce Development', 'Custom WooCommerce, Shopify &amp; headless stores with JazzCash, EasyPaisa, and optimized checkout for Pakistani shoppers.'],
             ['portfolio-branding.jpg', 'CMS & Content Management', 'WordPress, headless CMS, and content systems that blend aesthetics with easy admin control.'],
-            ['social-media-new.jpg', 'Front-End Development', 'Pixel-perfect, responsive interfaces with React, Next.js, and Tailwind — built for engagement and conversions.'],
-            ['ppc.jpg', 'Back-End Development', 'Robust Node.js, Laravel, and PostgreSQL architectures with secure APIs and scalable cloud deployment.'],
+            ['social-media.png', 'Front-End Development', 'Pixel-perfect, responsive interfaces with React, Next.js, and Tailwind — built for engagement and conversions.'],
+            ['pay-pal-click.png', 'Back-End Development', 'Robust Node.js, Laravel, and PostgreSQL architectures with secure APIs and scalable cloud deployment.'],
             ['portfolio-seo.jpg', 'SEO-Ready Launch', 'Every site built with Core Web Vitals, schema markup, and local SEO for Pakistan markets built in from day one.']
         ],
         advantages: [
@@ -115,11 +115,11 @@ const PAGES = {
         intro: 'NEOXWEB delivers custom web application development that transforms digital challenges into competitive advantages. Cloud-native architecture, seamless API integrations, and intelligent analytics — from startups in Lahore to enterprises across Pakistan.',
         verticals: [
             ['portfolio-web.jpg', 'Custom Web Application Development', 'Bespoke applications tailored to your unique needs — scalable, maintainable, and built for high ROI.'],
-            ['web-dev.jpg', 'Web Portals & Dashboards', 'Resilient, feature-rich portals for enterprise, B2B, and e-commerce with real-time analytics.'],
-            ['seo-new.jpg', 'Web App Consulting', 'Strategic planning to architect high-impact digital solutions — SaaS, portals, PWAs, and integrations.'],
+            ['e-commerce.png', 'Web Portals & Dashboards', 'Resilient, feature-rich portals for enterprise, B2B, and e-commerce with real-time analytics.'],
+            ['seo.jpg', 'Web App Consulting', 'Strategic planning to architect high-impact digital solutions — SaaS, portals, PWAs, and integrations.'],
             ['hero-bg-new.jpg', 'Web App Revamp & Modernization', 'Transform outdated systems into high-performing apps with modern UX and cloud-native architecture.'],
-            ['social-media-new.jpg', 'Progressive Web Apps (PWA)', 'App-like browser experiences with offline capabilities, push notifications, and fast load times.'],
-            ['ppc.jpg', 'Single Page Applications (SPA)', 'React, Angular, Vue SPAs with no full-page reloads — faster interactions and smoother UX.'],
+            ['social-media.png', 'Progressive Web Apps (PWA)', 'App-like browser experiences with offline capabilities, push notifications, and fast load times.'],
+            ['pay-pal-click.png', 'Single Page Applications (SPA)', 'React, Angular, Vue SPAs with no full-page reloads — faster interactions and smoother UX.'],
             ['portfolio-branding.jpg', 'API & Microservices', 'Modular backend architectures for scale, third-party integrations, and future growth.'],
             ['portfolio-seo.jpg', 'Support & Maintenance', '24/7 monitoring, security patches, performance tuning, and feature enhancements post-launch.']
         ],
@@ -141,17 +141,17 @@ const PAGES = {
         tag: 'Mobile App Development',
         title: 'Mobile App Development <span class="ui-gradient-text">Services &amp; Solutions</span>',
         lead: 'Supercharge your business with powerful, feature-rich mobile applications. Native iOS, Android, Flutter, and React Native — built for performance, engagement, and ROI.',
-        bg: 'social-media-new.jpg',
+        bg: 'social-media.png',
         pains: ['Apps that crash, lag, or fail App Store review on launch day', 'Poor UI/UX causing low retention and bad reviews', 'No analytics or push notification strategy for user engagement', 'Legacy apps that cannot scale with your growing user base'],
         intro: 'As a top-tier mobile app development company in Pakistan, NEOXWEB empowers businesses with solutions that promise performance and user delight. Our developers build across iOS, Android, Flutter, and React Native for startups and enterprises.',
         verticals: [
-            ['web-dev.jpg', 'iOS App Development', 'Swift, Flutter, React Native apps for Apple devices — engaging, scalable, and App Store ready.'],
+            ['e-commerce.png', 'iOS App Development', 'Swift, Flutter, React Native apps for Apple devices — engaging, scalable, and App Store ready.'],
             ['portfolio-web.jpg', 'Android App Development', 'Kotlin and cross-platform apps that captivate users across geographies and devices.'],
-            ['social-media-new.jpg', 'Hybrid App Solutions', 'Cross-platform apps with seamless UI/UX, smart features, and powerful security.'],
-            ['ppc.jpg', 'Enterprise Mobility', 'Remote workforce apps with secure connectivity, push notifications, and offline support.'],
+            ['social-media.png', 'Hybrid App Solutions', 'Cross-platform apps with seamless UI/UX, smart features, and powerful security.'],
+            ['pay-pal-click.png', 'Enterprise Mobility', 'Remote workforce apps with secure connectivity, push notifications, and offline support.'],
             ['hero-bg-new.jpg', 'Mobile App Modernization', 'Upgrade legacy apps with reengineering, refactoring, and cloud migration.'],
             ['portfolio-branding.jpg', 'App Modernization Strategy', 'Assessment, roadmap, and phased modernization to future-proof your mobile products.'],
-            ['seo-new.jpg', 'UI/UX for Mobile', 'User-centric design with prototypes, usability testing, and conversion-focused flows.'],
+            ['seo.jpg', 'UI/UX for Mobile', 'User-centric design with prototypes, usability testing, and conversion-focused flows.'],
             ['portfolio-seo.jpg', 'App Store Launch', 'Submission, ASO optimization, analytics setup, and post-launch support.']
         ],
         advantages: [
@@ -177,13 +177,13 @@ const PAGES = {
         pains: ['Limited scalability from rigid architecture and outdated cloud setup', 'Operational bottlenecks from manual processes and no real-time analytics', 'Fragmented systems causing poor integration and inefficient workflows', 'Subpar UX from lack of personalization and modern design patterns'],
         intro: 'We turn your SaaS vision into powerful cloud-based solutions. Flexible architectures, automated workflows, and advanced capabilities — comprehensive support from strategy and design through deployment for startups and growing SaaS companies in Pakistan.',
         verticals: [
-            ['seo-new.jpg', 'SaaS Consulting', 'Market analysis, strategic planning, and roadmaps aligned with scalability and innovation.'],
+            ['seo.jpg', 'SaaS Consulting', 'Market analysis, strategic planning, and roadmaps aligned with scalability and innovation.'],
             ['portfolio-web.jpg', 'Custom SaaS Application Development', 'Bespoke apps with seamless integration, scalable architecture, and high ROI.'],
-            ['web-dev.jpg', 'SaaS Product Development', 'End-to-end from design to deployment — MVPs to multi-tenant enterprise apps.'],
+            ['e-commerce.png', 'SaaS Product Development', 'End-to-end from design to deployment — MVPs to multi-tenant enterprise apps.'],
             ['hero-bg-new.jpg', 'SaaS Cloud Migration', 'Smooth transitions to cloud with zero downtime and optimized performance.'],
             ['portfolio-branding.jpg', 'SaaS Architecture Design', 'Multi-tenant and mixed-tenant architectures for security, compliance, and growth.'],
-            ['social-media-new.jpg', 'SaaS UI/UX Design', 'Wireframes to usability-tested prototypes — intuitive, engaging interfaces.'],
-            ['ppc.jpg', 'SaaS Integration Services', 'Custom APIs for secure data exchange and third-party tool connectivity.'],
+            ['social-media.png', 'SaaS UI/UX Design', 'Wireframes to usability-tested prototypes — intuitive, engaging interfaces.'],
+            ['pay-pal-click.png', 'SaaS Integration Services', 'Custom APIs for secure data exchange and third-party tool connectivity.'],
             ['portfolio-seo.jpg', 'SaaS Optimization', 'Performance tuning, feature enhancement, and reengineering for market traction.']
         ],
         advantages: [
@@ -208,12 +208,12 @@ const PAGES = {
         pains: ['88% of users won\'t return after a bad experience — slow or ugly stores lose sales', 'Poor mobile UX causing cart abandonment on phones', 'No local payment options (JazzCash, EasyPaisa, COD) limiting conversions', 'Weak SEO and security leaving stores invisible and vulnerable'],
         intro: 'As a premier eCommerce development company in Pakistan, NEOXWEB blends brand vision with robust tech stacks. We analyze your needs, define objectives, and build digital commerce platforms that convert — serving fashion, retail, solar, and startups nationwide.',
         verticals: [
-            ['web-dev.jpg', 'Custom eCommerce Website Development', 'WordPress, WooCommerce, Shopify, and custom stores that turn visitors into loyal customers.'],
-            ['social-media-new.jpg', 'Mobile Commerce Solutions', 'Mobile-first stores with push notifications, voice shopping, and faster checkout.'],
+            ['e-commerce.png', 'Custom eCommerce Website Development', 'WordPress, WooCommerce, Shopify, and custom stores that turn visitors into loyal customers.'],
+            ['social-media.png', 'Mobile Commerce Solutions', 'Mobile-first stores with push notifications, voice shopping, and faster checkout.'],
             ['portfolio-web.jpg', 'B2B eCommerce Solutions', 'Enterprise portals with inventory, pricing tiers, and multi-user account management.'],
             ['hero-bg-new.jpg', 'Platform Migration', 'Upgrade legacy systems to modern platforms with 10× performance improvement.'],
-            ['seo-new.jpg', 'Conversion & SEO Optimization', 'Data-driven CRO, SEO strategy, and security measures that boost rankings and sales.'],
-            ['ppc.jpg', 'Payment Integration', 'JazzCash, EasyPaisa, Stripe, PayPal, and cash-on-delivery for Pakistani markets.'],
+            ['seo.jpg', 'Conversion & SEO Optimization', 'Data-driven CRO, SEO strategy, and security measures that boost rankings and sales.'],
+            ['pay-pal-click.png', 'Payment Integration', 'JazzCash, EasyPaisa, Stripe, PayPal, and cash-on-delivery for Pakistani markets.'],
             ['portfolio-seo.jpg', 'Inventory & Fulfillment', 'Multi-channel inventory, shipping integrations, and order management systems.'],
             ['portfolio-branding.jpg', 'Store Maintenance', '24/7 monitoring, security patches, and performance optimization for peak uptime.']
         ],
@@ -349,10 +349,10 @@ function buildResources() {
             <div class="ui-container">
                 <div class="ui-services-intro ui-fade-up"><span class="ui-section-tag">Resources</span><h2>Explore our digital resources</h2></div>
                 <div class="ui-resources-grid ui-fade-up">
-                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/web-dev.jpg" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>Launch Your Business Website in 2–4 Weeks</h4><span class="meta">Planning &amp; go-live checklist</span></div></article>
-                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/seo-new.jpg" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>SEO for Pakistani Businesses in 2025</h4><span class="meta">Local keywords &amp; Google Business</span></div></article>
-                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/ppc.jpg" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>Google Ads for Local Leads</h4><span class="meta">Budget, targeting &amp; ROI</span></div></article>
-                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/social-media-new.jpg" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>Social Media Growth Playbook</h4><span class="meta">Instagram, reels &amp; engagement</span></div></article>
+                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/e-commerce.png" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>Launch Your Business Website in 2–4 Weeks</h4><span class="meta">Planning &amp; go-live checklist</span></div></article>
+                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/seo.jpg" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>SEO for Pakistani Businesses in 2025</h4><span class="meta">Local keywords &amp; Google Business</span></div></article>
+                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/pay-pal-click.png" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>Google Ads for Local Leads</h4><span class="meta">Budget, targeting &amp; ROI</span></div></article>
+                    <article class="ui-resource-card"><div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/social-media.png" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div><div class="body"><span class="type">Guide</span><h4>Social Media Growth Playbook</h4><span class="meta">Instagram, reels &amp; engagement</span></div></article>
                 </div>
                 <div class="ui-text-center" style="margin-top:1.25rem"><a href="resources.html" class="ui-btn-outline">Explore All Resources</a></div>
             </div>

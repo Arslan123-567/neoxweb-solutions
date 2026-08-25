@@ -540,19 +540,19 @@ function buildMain() {
             </div>
             <div class="ui-resources-grid">
                 <article class="ui-resource-card ui-fade-up">
-                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/web-dev.jpg" alt="WordPress vs Drupal – The Definitive Ebook" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/e-commerce.png" alt="WordPress vs Drupal – The Definitive Ebook" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                     <div class="body"><span class="type">Ebook</span><h4>WordPress vs. Drupal - The Definitive Ebook</h4><div class="meta-list"><span>Web Development</span><span>CMS Development</span></div><div class="author">Santanu Mandal · Oct 15th, 2025 · 25 minutes read</div><a href="resources.html">Download now</a></div>
                 </article>
                 <article class="ui-resource-card ui-fade-up">
-                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/seo-new.jpg" alt="Zero to Hero With a Website Revamp in 2025" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/seo.jpg" alt="Zero to Hero With a Website Revamp in 2025" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                     <div class="body"><span class="type">Ebook</span><h4>Zero to Hero With A Website Revamp in 2025</h4><div class="meta-list"><span>Web Development</span><span>Web Design</span></div><div class="author">Samrat Biswas · Oct 15th, 2025 · 20 minutes read</div><a href="resources.html">Download now</a></div>
                 </article>
                 <article class="ui-resource-card ui-fade-up">
-                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/ppc.jpg" alt="Low Code Vs No Code Vs Pro Code" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/pay-pal-click.png" alt="Low Code Vs No Code Vs Pro Code" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                     <div class="body"><span class="type">Ebook</span><h4>Low-Code vs No-Code vs Pro-Code - Choosing the best Platform for 2025</h4><div class="meta-list"><span>Web Development</span></div><div class="author">Saptarshi Halder · Oct 15th, 2025 · 25 minutes read</div><a href="resources.html">Download now</a></div>
                 </article>
                 <article class="ui-resource-card ui-fade-up">
-                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/social-media-new.jpg" alt="Unlock 3X ROI with Website Personalization Strategies" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+                    <div class="thumb" style="padding:0;overflow:hidden"><img src="assets/images/neoxweb/social-media.png" alt="Unlock 3X ROI with Website Personalization Strategies" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
                     <div class="body"><span class="type">Ebook</span><h4>Unlock 3X ROI with Website Personalization Strategies</h4><div class="meta-list"><span>Website Personalization</span></div><div class="author">Samrat Biswas · Oct 15th, 2025 · 25 minutes read</div><a href="resources.html">Download now</a></div>
                 </article>
                 <article class="ui-resource-card ui-fade-up">
