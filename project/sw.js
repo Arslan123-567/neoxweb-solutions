@@ -1,7 +1,7 @@
 /**
  * NEOXWEB Service Worker — offline cache for mobile PWA
  */
-const CACHE = 'neoxweb-v9';
+const CACHE = 'neoxweb-v10';
 const ASSETS = [
     './index.html',
     './services.html',
@@ -73,17 +73,15 @@ self.addEventListener('fetch', (event) => {
 
     if (isStaticAsset) {
         event.respondWith(
-            caches.match(request).then((cached) => {
-                if (cached) return cached;
-
-                return fetch(request).then((response) => {
+            fetch(request, { cache: 'reload' })
+                .then((response) => {
                     if (response.ok) {
                         const copy = response.clone();
                         caches.open(CACHE).then((cache) => cache.put(request, copy));
                     }
                     return response;
-                });
-            })
+                })
+                .catch(() => caches.match(request))
         );
     }
 });

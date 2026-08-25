@@ -758,6 +758,35 @@ img.nx-photo,
     text-align: left;
 }
 
+.neoxweb-site .nx-img-strip__media,
+.neoxweb-site .neox-service-card__media,
+.neoxweb-site .service-panel__photo,
+.neoxweb-site .visual-art-wrap,
+.neoxweb-site .ui-cs-card__media,
+.neoxweb-site .ui-resource-card .thumb,
+.neoxweb-site .cs-gallery-full__item {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+}
+
+.neoxweb-site .nx-img-strip__media img,
+.neoxweb-site .neox-service-card__media img,
+.neoxweb-site .service-panel__photo img,
+.neoxweb-site .visual-art-wrap img,
+.neoxweb-site .ui-cs-card__media img,
+.neoxweb-site .ui-resource-card .thumb img,
+.neoxweb-site .cs-gallery-full__item img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+}
+
 .about-timeline-entry:last-child {
     padding-bottom: 0;
 }
