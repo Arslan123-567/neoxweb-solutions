@@ -1191,10 +1191,6 @@ table {
   margin-bottom: 0.75rem;
 }
 
-.site-footer {
-  /* padding: 2.5rem 0; */
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
 
 .footer-grid {
   display: grid;

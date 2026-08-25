@@ -1016,9 +1016,7 @@ Small Mobile
 
   .neoxweb-site .web-hero > .container,
   .neoxweb-site .web-hero .web-hero-grid {
-    padding-top: calc(
-      var(--nav-h, 72px) + clamp(2rem, 4.5vw, 3.75rem)
-    ) !important;
+    padding-top: calc(var(--nav-h, 72px) + 0.35rem) !important;
   }
 
   body.nx-app-body.home-page {
@@ -1195,7 +1193,7 @@ Small Mobile
     width: 100%;
     max-width: 100%;
     min-height: auto;
-    padding-top: 2.5rem;
+    padding-top: 0;
     padding-bottom: 2rem;
   }
 
@@ -1205,7 +1203,7 @@ Small Mobile
     width: 100% !important;
     max-width: 100% !important;
     margin-inline: 0 !important;
-    padding-top: calc(var(--nav-h, 72px) + 1rem);
+    padding-top: calc(var(--nav-h, 72px) + 0.35rem);
     padding-left: clamp(1rem, 3vw, 1.5rem);
     padding-right: clamp(1rem, 3vw, 1.5rem);
     box-sizing: border-box;
@@ -1365,7 +1363,7 @@ Small Mobile
   /* Inner Container Spacing */
   .hero-section--pro .hero-grid--bg,
   .nx-page-hero__inner.hero-grid--bg {
-    padding-top: 2rem !important;
+    padding-top: calc(var(--nav-h, 72px) + 0.35rem) !important;
     padding-bottom: 1rem !important;
     display: flex !important;
     flex-direction: column !important; /* Force layout to stack vertically */

@@ -66,10 +66,10 @@ body.neoxweb-site svg {
         display: none !important;
     }
 
-    /* Hero homepage only — inner page heroes use nx-page-hero padding */
+    /* Hero — navbar ke neeche seedha content */
     .hero-section--neoxweb:not(.nx-page-hero):not(.contact-page-hero) {
         min-height: auto !important;
-        padding: clamp(5.5rem, 14vw, 7rem) 0 clamp(2.5rem, 6vw, 3.5rem) !important;
+        padding: 0 0 clamp(2rem, 4vw, 2.5rem) !important;
     }
 
     body.neoxweb-site .hero-section--pro.nx-page-hero,
@@ -82,8 +82,8 @@ body.neoxweb-site svg {
     .hero-section--pro,
     .hero-section--neoxweb,
     .web-hero.hero-section--pro {
-        padding: 0 0 clamp(2.5rem, 6vw, 3.5rem) !important;
-        min-height: min(100vh, 860px) !important;
+        padding: 0 0 clamp(2rem, 4vw, 2.5rem) !important;
+        min-height: auto !important;
         height: auto !important;
         overflow: visible !important;
     }
@@ -96,8 +96,10 @@ body.neoxweb-site svg {
     .hero-section--pro .hero-grid,
     .hero-section--neoxweb .hero-grid--bg,
     .web-hero.hero-section--pro .web-hero-grid {
-        min-height: min(100vh, 860px) !important;
-        padding-bottom: 2.5rem !important;
+        min-height: auto !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        padding-bottom: 1.5rem !important;
     }
 
     body.neoxweb-site .hero-section--pro .hero-actions,
@@ -111,7 +113,7 @@ body.neoxweb-site svg {
     .hero-section--pro.nx-page-hero .nx-page-hero__inner,
     .hero-section--pro.nx-page-hero .contact-hero-inner,
     .hero-section--pro.contact-page-hero .contact-hero-inner {
-        padding-top: calc(var(--nav-h, 72px) + 0.5rem);
+        padding-top: calc(var(--nav-h, 72px) + 0.35rem);
     }
 
     .hero-section--neoxweb .hero-grid--bg {
@@ -186,13 +188,14 @@ body.neoxweb-site svg {
 
     /* Service pages */
     .svc-banner-hero {
-        padding: clamp(5rem, 12vw, 6.5rem) 0 clamp(1.5rem, 4vw, 2rem) !important;
+        padding: 0 0 clamp(1.5rem, 4vw, 2rem) !important;
     }
 
     .svc-banner-hero__inner {
         width: 100% !important;
         margin-inline: 0 !important;
         padding-inline: clamp(1rem, 2.5vw, 1.5rem) !important;
+        padding-top: calc(var(--nav-h, 72px) + 0.35rem) !important;
         text-align: left;
     }
 

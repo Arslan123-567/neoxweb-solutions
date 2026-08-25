@@ -160,7 +160,7 @@ img.nx-photo {
 .neoxweb-site .svc-banner-hero__inner,
 .neoxweb-site .web-hero > .container,
 .neoxweb-site .web-hero-grid {
-    padding-top: calc(var(--nav-h, 72px) + 0.5rem) !important;
+    padding-top: calc(var(--nav-h, 72px) + 0.35rem) !important;
 }
 
 /* Home, About, Portfolio, Team — hero text left */

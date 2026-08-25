@@ -28,6 +28,8 @@ window.NxDefer = function (fn) {
 
     function appendStylesheet(id, file) {
         if (document.getElementById(id)) return;
+        var existing = document.querySelector('link[rel="stylesheet"][href$="/css/' + file + '"], link[rel="stylesheet"][href="css/' + file + '"]');
+        if (existing) return;
         var link = document.createElement('link');
         link.id = id;
         link.rel = 'stylesheet';
@@ -37,6 +39,8 @@ window.NxDefer = function (fn) {
 
     function appendScript(id, file) {
         if (document.getElementById(id)) return;
+        var existing = document.querySelector('script[src$="/js/' + file + '"], script[src="js/' + file + '"]');
+        if (existing) return;
         var s = document.createElement('script');
         s.id = id;
         s.src = basePath() + 'js/' + file;

@@ -66,5 +66,24 @@ self.addEventListener('fetch', (event) => {
                 })
                 .catch(() => caches.match(request).then((r) => r || caches.match('./index.html')))
         );
+        return;
+    }
+
+    const isStaticAsset = sameOrigin && /\/(?:css|js|assets)\//.test(url.pathname);
+
+    if (isStaticAsset) {
+        event.respondWith(
+            caches.match(request).then((cached) => {
+                if (cached) return cached;
+
+                return fetch(request).then((response) => {
+                    if (response.ok) {
+                        const copy = response.clone();
+                        caches.open(CACHE).then((cache) => cache.put(request, copy));
+                    }
+                    return response;
+                });
+            })
+        );
     }
 });

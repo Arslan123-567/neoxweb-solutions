@@ -1168,7 +1168,7 @@
 .neoxweb-site .hero-section--premium,
 .neoxweb-site .web-hero.hero-section--premium {
     background: #050806 !important;
-    min-height: min(88vh, 820px) !important;
+    min-height: auto !important;
     padding: 0 !important;
 }
 
@@ -1829,4 +1829,66 @@
     min-width: 0 !important;
     scroll-snap-align: start;
   }
+}
+
+/* ============================================================
+   HERO — remove extra top space above headings (site-wide)
+   ============================================================ */
+
+.neoxweb-site .hero-section--pro > .container,
+.neoxweb-site .hero-section--pro > .ui-container,
+.neoxweb-site .hero-section--pro > .cs-container,
+.neoxweb-site .hero-section--pro .hero-grid--bg,
+.neoxweb-site .hero-section--pro .container.hero-grid--bg,
+.neoxweb-site .hero-section--pro .nx-page-hero__inner,
+.neoxweb-site .hero-section--premium .hero-grid--bg,
+.neoxweb-site .hero-section--premium-home .hero-grid--bg,
+.neoxweb-site .hero-section--premium .nx-page-hero__inner,
+.neoxweb-site .hero-section--premium .contact-hero-premium__inner,
+.neoxweb-site .hero-section--premium .svc-banner-hero__inner,
+.neoxweb-site .web-hero > .container,
+.neoxweb-site .web-hero .web-hero-grid,
+.neoxweb-site .svc-banner-hero__inner,
+.neoxweb-site .contact-hero-inner,
+.neoxweb-site .contact-hero-premium__inner,
+.neoxweb-site .ui-hero--inner .ui-container {
+    padding-top: calc(var(--nav-h, 72px) + 0.35rem) !important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    justify-content: flex-start !important;
+    justify-items: start !important;
+}
+
+.neoxweb-site .hero-section--pro .hero-copy,
+.neoxweb-site .hero-section--premium .hero-copy,
+.neoxweb-site .web-hero-copy,
+.neoxweb-site .contact-hero-inner,
+.neoxweb-site .ui-hero--inner .ui-container {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.neoxweb-site .hero-section--pro .hero-title,
+.neoxweb-site .hero-section--pro .hero-copy h1,
+.neoxweb-site .hero-section--premium .hero-title,
+.neoxweb-site .hero-section--premium .nx-page-hero__inner h1,
+.neoxweb-site .web-hero h1,
+.neoxweb-site .svc-banner-hero h1,
+.neoxweb-site .nx-page-hero h1,
+.neoxweb-site .contact-hero-inner h1,
+.neoxweb-site .ui-hero--inner h1 {
+    margin-top: 0 !important;
+}
+
+.neoxweb-site .hero-section--pro .section-tag,
+.neoxweb-site .hero-section--premium .section-tag,
+.neoxweb-site .web-hero .section-tag,
+.neoxweb-site .ui-hero--inner .ui-section-tag,
+.neoxweb-site .svc-banner-hero .ui-section-tag {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.neoxweb-site .web-hero:has(.web-hero-visual-icon) h1 {
+    margin-top: 0 !important;
 }

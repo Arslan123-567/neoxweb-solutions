@@ -150,6 +150,12 @@
         border-color 0.25s ease;
 }
 
+.navbar__contact-btn,
+#contactNavBtn {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    color: #0f172a;
+}
+
 .navbar__contact-btn:hover,
 .navbar__login-btn:hover,
 #contactNavBtn:hover,
@@ -1059,40 +1065,66 @@
     }
 
 
-    .nxv-contact-mobile {
-        width: 100%;
+.nxv-contact-mobile {
+    width: 100%;
+    min-height: 50px;
 
-        min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+    padding: 0 22px;
 
-        border: 1px solid rgba(74, 222, 128, 0.35);
-        border-radius: 999px;
+    background: linear-gradient(
+        135deg,
+        #4ade80 0%,
+        #22c55e 100%
+    ) !important;
 
-        background: white;
-        color: #0f172a;
+    color: #0f172a !important;
 
-        text-decoration: none;
+    border: 1px solid #4ade80;
+    border-radius: 999px;
 
-        font-size: 14px;
-        font-weight: 700;
+    text-decoration: none;
 
-        box-shadow: 0 12px 22px rgba(34, 197, 94, 0.12);
-        transition: 0.25s ease;
-    }
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
 
+    box-shadow:
+        0 10px 25px rgba(34, 197, 94, 0.18);
 
-    .nxv-contact-mobile:hover,
-    .nxv-contact-mobile:focus-visible {
-        background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
-        color: #0f172a;
-        transform: translateY(-1px);
-    }
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
 
+.nxv-contact-mobile i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
 
+.nxv-contact-mobile:hover,
+.nxv-contact-mobile:focus-visible {
+    background: #111827 !important;
+    color: #4ade80 !important;
+
+    border-color: #4ade80;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 32px rgba(15, 23, 42, 0.18);
+}
+
+.nxv-contact-mobile:hover i,
+.nxv-contact-mobile:focus-visible i {
+    transform: translateX(5px);
+}
     .nxv-desktop-search {
         display: none;
     }
