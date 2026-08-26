@@ -64,19 +64,24 @@
     <link rel="stylesheet" href="css/nx-images-row.css">
     <link rel="stylesheet" href="css/home-hero-final.css">
     <link rel="stylesheet" href="css/nx-images-global.css">
+    <link rel="stylesheet" href="css/gsap-animation.css">
     <script defer src="js/hero-premium.js"></script>
     <script defer src="js/hero-particles.js"></script>
     <script src="js/row-layout.js" defer></script>
     <script type="module" src="js/motion-animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="js/gsap.js"></script>
+ 
 </head>
 <body class="web-container neoxweb-site home-page nx-advanced-page ">
+<div class="circle-background" id="circleBackground"></div>
 
-<div class="">
+    <div class="">
     <div id="navbar-container"></div>
 
 <main >
 
-    <section class="hero-section hero-section--neoxweb hero-section--pro hero-section--premium-home hero-section--premium">
+    <section class="animation-bg  hero-section hero-section--neoxweb hero-section--pro hero-section--premium-home hero-section--premium">
         <div class="hero-tech-bg" aria-hidden="true">
             <img src="assets/images/neoxweb/hero-bg-new.jpg" alt="" width="1536" height="1024" decoding="async" fetchpriority="high">
         </div>
@@ -316,7 +321,7 @@
                     <!-- Card 2 -->
                     <div class="tm-card">
                         <div class="tm-avatar-box">
-                            <img src="assets/images/neoxweb/portfolio-web.jpg" alt="Michael T." loading="lazy">
+                            <img src="assets/images/neoxweb/cicd.jpg" alt="Michael T." loading="lazy">
                         </div>
                         <div class="tm-card-content">
                             <span class="tm-quote-start">&ldquo;</span>
@@ -387,7 +392,6 @@
    
 
 </main>
-
 <div class="footer-uni__top container">
 
     <div class="footer-uni__grid">
@@ -582,6 +586,7 @@
   </div>
 
 </div>
+
     <script defer src="js/utils.js"></script>
     <script defer src="js/left-right-arrows.js"></script>
     <script defer src="js/main.js"></script>

@@ -6,21 +6,21 @@
 
     var SERVICE_HERO_IMAGES = {
         web: 'e-commerce.png',
-        mobile: 'portfolio-web.jpg',
+        mobile: 'cicd.jpg',
         development: 'e-commerce.png',
         'saas-platforms': 'e-commerce.png',
         'ecommerce-strategy': 'portfolio-pay-pal-click.png',
         cloud: 'e-commerce.png',
         'software-engineering': 'e-commerce.png',
         'testing-qa': 'e-commerce.png',
-        'application-modernization': 'portfolio-web.jpg',
+        'application-modernization': 'cicd.jpg',
         'data-analytics': 'seo.jpg',
         ai: 'seo.jpg',
         'it-consulting': 'seo.jpg',
         'product-design': 'social-media.png',
         'graphic-design': 'portfolio-branding.jpg',
         'social-media-marketing': 'social-media.png',
-        'video-editing': 'portfolio-web.jpg'
+        'video-editing': 'cicd.jpg'
     };
 
     function pageKey() {

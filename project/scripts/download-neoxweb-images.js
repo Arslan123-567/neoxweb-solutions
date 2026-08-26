@@ -14,7 +14,7 @@ const files = [
     'pay-pal-click.png',
     'social-media.png',
     'portfolio-branding.jpg',
-    'portfolio-web.jpg',
+    'cicd.jpg',
     'portfolio-seo.jpg',
     'portfolio-pay-pal-click.png',
     'hero-bg-new.jpg',

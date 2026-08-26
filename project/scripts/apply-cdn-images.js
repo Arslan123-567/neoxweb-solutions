@@ -10,7 +10,7 @@ const skip = new Set(['navbar.html', 'unified-header.html', 'unified-footer.html
 
 const files = [
     'e-commerce.png', 'seo.jpg', 'pay-pal-click.png', 'social-media.png',
-    'portfolio-branding.jpg', 'portfolio-web.jpg', 'portfolio-seo.jpg', 'portfolio-pay-pal-click.png',
+    'portfolio-branding.jpg', 'cicd.jpg', 'portfolio-seo.jpg', 'portfolio-pay-pal-click.png',
     'hero-bg-new.jpg', 'logo.png', 'logo-large.jpg'
 ];
 

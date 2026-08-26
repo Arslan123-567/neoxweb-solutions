@@ -127,7 +127,7 @@ const BLOCKS = {
                     <h2>Proven results for real clients</h2>
                 </div>
                 <div class="pr-mini-cases pr-reveal">
-                    <a href="case-study.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-web.jpg" alt="EdTech case" loading="lazy"><div><h4>3× Revenue — EdTech Platform</h4><p>Platform modernization for global leader</p></div></a>
+                    <a href="case-study.html" class="pr-mini-case"><img src="assets/images/neoxweb/cicd.jpg" alt="EdTech case" loading="lazy"><div><h4>3× Revenue — EdTech Platform</h4><p>Platform modernization for global leader</p></div></a>
                     <a href="case-study-seo.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-seo.jpg" alt="SEO case" loading="lazy"><div><h4>150% Traffic — Dezara Fashion</h4><p>Technical SEO &amp; content strategy</p></div></a>
                     <a href="case-study-ppc.html" class="pr-mini-case"><img src="assets/images/neoxweb/portfolio-pay-pal-click.png" alt="PPC case" loading="lazy"><div><h4>3× ROI — BoltSolar PPC</h4><p>Targeted ads &amp; landing pages</p></div></a>
                 </div>

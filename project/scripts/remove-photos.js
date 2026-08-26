@@ -7,7 +7,7 @@ const heroIcons = {
     'e-commerce.png': 'fa-code',
     'seo.jpg': 'fa-chart-line',
     'pay-pal-click.png': 'fa-bullhorn',
-    'portfolio-web.jpg': 'fa-globe',
+    'cicd.jpg': 'fa-globe',
     'portfolio-seo.jpg': 'fa-search',
     'portfolio-pay-pal-click.png': 'fa-ad',
     'portfolio-branding.jpg': 'fa-palette',

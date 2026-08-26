@@ -12,7 +12,7 @@ const photoMap = {
     'assets/images/neoxweb/ppc.svg': 'assets/images/neoxweb/pay-pal-click.png',
     'assets/images/neoxweb/social-media-new.svg': 'assets/images/neoxweb/social-media.png',
     'assets/images/neoxweb/portfolio-branding.svg': 'assets/images/neoxweb/portfolio-branding.jpg',
-    'assets/images/neoxweb/portfolio-web.svg': 'assets/images/neoxweb/portfolio-web.jpg',
+    'assets/images/neoxweb/cicd.jpg.svg': 'assets/images/neoxweb/cicd.jpg',
     'assets/images/neoxweb/portfolio-seo.svg': 'assets/images/neoxweb/portfolio-seo.jpg',
     'assets/images/neoxweb/portfolio-ppc.svg': 'assets/images/neoxweb/portfolio-pay-pal-click.png',
     'assets/images/neoxweb/hero-bg-new.svg': 'assets/images/neoxweb/hero-bg-new.jpg',
@@ -27,11 +27,11 @@ const photoMap = {
     'assets/services/saas-platforms.svg': 'assets/images/neoxweb/e-commerce.png',
     'assets/services/application-modernization.svg': 'assets/images/neoxweb/e-commerce.png',
     'assets/services/it-consulting.svg': 'assets/images/neoxweb/seo.jpg',
-    'assets/services/cloud-engineering.svg': 'assets/images/neoxweb/portfolio-web.jpg',
+    'assets/services/cloud-engineering.svg': 'assets/images/neoxweb/cicd.jpg',
     'assets/services/ai-automation.svg': 'assets/images/neoxweb/seo.jpg',
     'assets/images/project-01.svg': 'assets/images/neoxweb/portfolio-seo.jpg',
     'assets/images/project-02.svg': 'assets/images/neoxweb/portfolio-pay-pal-click.png',
-    'assets/images/project-03.svg': 'assets/images/neoxweb/portfolio-web.jpg'
+    'assets/images/project-03.svg': 'assets/images/neoxweb/cicd.jpg'
 };
 
 const humanPhotos = [

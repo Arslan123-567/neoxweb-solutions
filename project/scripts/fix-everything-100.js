@@ -20,7 +20,7 @@ const JPG_TO_SVG = {
     'pay-pal-click.png': 'ppc.svg',
     'social-media.png': 'social-media-new.svg',
     'portfolio-branding.jpg': 'portfolio-branding.svg',
-    'portfolio-web.jpg': 'portfolio-web.svg',
+    'cicd.jpg': 'cicd.jpg.svg',
     'portfolio-seo.jpg': 'portfolio-seo.svg',
     'portfolio-pay-pal-click.png': 'portfolio-ppc.svg',
     'hero-bg-new.jpg': 'hero-bg-new.svg',

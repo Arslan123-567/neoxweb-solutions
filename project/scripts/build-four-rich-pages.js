@@ -162,7 +162,7 @@ function patchWeb(html) {
 
 function patchDevelopment(html) {
     html = html.replace(
-        "background-image:url('assets/images/neoxweb/portfolio-web.jpg')",
+        "background-image:url('assets/images/neoxweb/cicd.jpg')",
         "background-image:url('assets/images/web-dev/web-development-hex.png')"
     );
 

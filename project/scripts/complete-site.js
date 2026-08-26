@@ -40,7 +40,7 @@ const NEW_PAGES = {
         tag: 'Video Editing',
         h1: 'Professional video editing for <span class="highlight">reels, ads &amp; YouTube</span>.',
         lead: 'Promo videos, social reels, product demos, and ad creatives edited for maximum impact on every platform.',
-        image: 'portfolio-web.jpg',
+        image: 'cicd.jpg',
         metrics: ['Reels & shorts', 'YouTube edits', 'Ad creatives'],
         floats: ['4K Export', '48h Turnaround'],
         tech: ['Premiere Pro', 'After Effects', 'CapCut Pro', 'Color Grading', 'Motion Graphics', 'Subtitles'],

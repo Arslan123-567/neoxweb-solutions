@@ -8,7 +8,7 @@
         'assets/images/neoxweb/pay-pal-click.png',
         'assets/images/neoxweb/social-media.png',
         'assets/images/neoxweb/portfolio-branding.jpg',
-        'assets/images/neoxweb/portfolio-web.jpg'
+        'assets/images/neoxweb/cicd.jpg'
     ];
 
     function imgFor(i) {
