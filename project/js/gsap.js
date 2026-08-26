@@ -28,13 +28,13 @@ function createCircle() {
         {
             scale: 1,
             opacity: 1,
-            duration: 1.5,
+            duration: 0.5,
             ease: "power2.out",
             onComplete: () => {
                 gsap.to(circle, {
                     scale: 1.5,
                     opacity: 0,
-                    duration: 2.5,
+                    duration: 1.5,
                     ease: "power2.inOut",
                     onComplete: () => {
                         circle.remove();
