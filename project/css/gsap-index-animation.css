@@ -5,7 +5,7 @@
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: -2;
+    z-index: -1;
 }
 
 .bg-circle {
@@ -16,24 +16,15 @@
     pointer-events: none;
 }
 
-.neon-particle-bg {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background: #000;
-    overflow: hidden;
-}
-
-#particleCanvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 0;
-}
-
-.background-content {
-    position: relative;
-    z-index: 2;
+/* Remove excess top padding on mobile/tablet for home page */
+@media (max-width: 900px) {
+    body.neoxweb-site.home-page {
+        padding-top: 0 !important;
+        padding-bottom: 64px !important;
+    }
+    
+    body.nx-app-body.neoxweb-site.home-page {
+        padding-top: 0 !important;
+        padding-bottom: 64px !important;
+    }
 }
