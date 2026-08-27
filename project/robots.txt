@@ -8,5 +8,5 @@ Disallow: /404.html
 
 
 
-Sitemap: https://neoxweb.netlify.app/sitemap.xml
+Sitemap: https://neoxweb.com/sitemap.xml
 

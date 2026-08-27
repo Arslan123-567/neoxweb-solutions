@@ -69,7 +69,7 @@ window.NexuraConfig = (function () {
 
     return {
         siteName: 'NEOXWEB',
-        siteUrl: 'https://neoxweb.netlify.app',
+        siteUrl: 'https://neoxweb.com',
         env: cfg.env,
         basePath: cfg.basePath,
         siteRoot: cfg.siteRoot,
