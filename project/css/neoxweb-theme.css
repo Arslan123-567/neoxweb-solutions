@@ -10,6 +10,26 @@
     --neox-hero-bg-image: url('../assets/images/neoxweb/hero-bg-new.jpg');
 }
 
+/* Decorative GSAP layer must never participate in document flow. */
+.circle-background {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(74, 222, 128, 0.12);
+    filter: blur(1px);
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
 .text-neox-green,
 .hero-title-accent {
     color: var(--neox-green-bright);

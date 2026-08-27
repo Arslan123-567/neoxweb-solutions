@@ -1,15 +1,20 @@
 const circleContainer = document.getElementById("circleBackground");
 
 function createCircle() {
+    if (!circleContainer || typeof gsap === "undefined") return;
+
     const circle = document.createElement("div");
     circle.classList.add("bg-circle");
-
+    
     // Random size
     const size = Math.random() * 180 + 80;
+    
+    // Position using client viewport bounds
+    const maxX = document.documentElement.clientWidth;
+    const maxY = document.documentElement.clientHeight;
 
-    // Random position
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
 
     circle.style.width = `${size}px`;
     circle.style.height = `${size}px`;
@@ -18,12 +23,14 @@ function createCircle() {
 
     circleContainer.appendChild(circle);
 
-    // Animation
+    // GSAP Animation with explicit Centering transform
     gsap.fromTo(
         circle,
-        {
-            scale: 0,
-            opacity: 0
+        { 
+            scale: 0, 
+            opacity: 0,
+            xPercent: -50, // Center alignment for GSAP
+            yPercent: -50 
         },
         {
             scale: 1,
@@ -45,5 +52,4 @@ function createCircle() {
     );
 }
 
-// New circle every 700ms
 setInterval(createCircle, 700);

@@ -1,9 +1,16 @@
+/* Main Page Scroll Containment */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 .circle-background {
     position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
     pointer-events: none;
     z-index: -1;
 }
@@ -14,15 +21,11 @@
     background: rgba(74, 222, 128, 0.12);
     filter: blur(1px);
     pointer-events: none;
+    will-change: transform, opacity;
 }
 
-/* Remove excess top padding on mobile/tablet for home page */
 @media (max-width: 900px) {
-    body.neoxweb-site.home-page {
-        padding-top: 0 !important;
-        padding-bottom: 64px !important;
-    }
-    
+    body.neoxweb-site.home-page,
     body.nx-app-body.neoxweb-site.home-page {
         padding-top: 0 !important;
         padding-bottom: 64px !important;
