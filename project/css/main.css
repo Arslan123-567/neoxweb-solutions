@@ -133,6 +133,7 @@ table {
   margin: 0 auto;
 }
 .page-loader {
+  display: none !important;
   position: fixed;
   inset: 0;
   background: #050505;

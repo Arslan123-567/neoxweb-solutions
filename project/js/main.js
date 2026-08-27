@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeCursor();
     initializeMobileMenu();
     initializeCookieBanner();
-    initializePageLoader();
     initializeLoginTriggers();
     initializeNavHighlight();
 });

@@ -78,8 +78,8 @@ window.NxDefer = function (fn) {
         ].forEach(moveToEnd);
     }
 
-    /* Critical layout CSS — inject as soon as this script runs */
-    loadSiteLayers();
+    /* Keep first paint free from optional visual bundles. */
+    NxDefer(loadSiteLayers);
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', finalizeCascade, { once: true });

@@ -1041,6 +1041,9 @@ Small Mobile
     max-width: 100vw !important;
     margin-left: calc(50% - 50vw) !important;
     margin-right: calc(50% - 50vw) !important;
+    margin-top: calc(
+      -1 * (var(--nx-header-h, 3.5rem) + var(--nx-safe-top, 0px))
+    ) !important;
     padding-top: calc(
       var(--nx-header-h, 3.5rem) + var(--nx-safe-top, 0px) + 0.2rem
     ) !important;

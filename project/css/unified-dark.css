@@ -497,16 +497,6 @@ body.ui-ref-theme.has-dock {
     padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0));
 }
 
-@media (max-width: 768px) {
-    body.ui-ref-theme .ui-bottom-nav {
-        display: none !important;
-    }
-
-    body.ui-ref-theme.has-dock {
-        padding-bottom: 0 !important;
-    }
-}
-
 /* ── All sections dark ── */
 body.ui-ref-theme .ui-section {
     background: var(--ui-ref-bg2);
