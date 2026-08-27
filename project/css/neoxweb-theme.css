@@ -30,6 +30,12 @@
     will-change: transform, opacity;
 }
 
+#pwaInstallBanner,
+#headerInstallBtn,
+#nxDrawerInstall {
+    display: none !important;
+}
+
 .text-neox-green,
 .hero-title-accent {
     color: var(--neox-green-bright);

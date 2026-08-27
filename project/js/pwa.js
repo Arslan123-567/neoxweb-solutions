@@ -28,7 +28,7 @@
     window.addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
         deferredPrompt = e;
-        showInstallBanner();
+        hideInstallBanner();
     });
 
     window.addEventListener('appinstalled', () => {
@@ -40,13 +40,6 @@
     if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
         document.documentElement.classList.add('standalone');
         document.body?.classList.add('standalone-app');
-    }
-
-    function showInstallBanner() {
-        if (!window.matchMedia('(max-width: 900px)').matches) return;
-        if (localStorage.getItem('nexuraPwaInstalled') || localStorage.getItem(DISMISS_KEY)) return;
-        const banner = document.getElementById('pwaInstallBanner');
-        if (banner) banner.classList.add('show');
     }
 
     function hideInstallBanner() {
@@ -82,6 +75,6 @@
         dismissBtn?.addEventListener('click', () => window.NexuraPWA.dismiss());
         headerInstall?.addEventListener('click', () => window.NexuraPWA.install());
 
-        if (window.NexuraPWA.canInstall()) showInstallBanner();
+        hideInstallBanner();
     });
 })();

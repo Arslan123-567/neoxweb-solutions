@@ -253,18 +253,10 @@ const NexuraApp = (() => {
                     <a href="contact.html" class="nx-btn nx-btn-primary w-100 d-flex">
                         <i class="bi bi-chat-quote-fill"></i> Get a Free Quote
                     </a>
-                    <button type="button" class="nx-btn nx-btn-outline w-100 mt-2" id="nxDrawerInstall">
-                        <i class="bi bi-download"></i> Install App
-                    </button>
                 </div>
             </div>
         `;
         document.body.appendChild(drawer);
-
-        document.getElementById('nxDrawerInstall')?.addEventListener('click', () => {
-            window.dispatchEvent(new CustomEvent('nexura-install-pwa'));
-            toast('Install prompt opened', 'info');
-        });
     }
 
     const DOCK_TABS = [
