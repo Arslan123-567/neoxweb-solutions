@@ -19,7 +19,7 @@
     }
 
     body.nx-app-body {
-        padding-bottom: calc(4rem + env(safe-area-inset-bottom, 0)) !important;
+        padding-bottom: 0 !important;
     }
 
     /* Hide case study card photos in mobile app */
@@ -102,7 +102,7 @@
     }
 
     body.nx-app-body .ui-bottom-nav {
-        display: flex;
+        display: none !important;
         position: fixed;
         bottom: 0;
         left: 0;
