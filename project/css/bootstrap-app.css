@@ -598,12 +598,15 @@ body.nx-app-body #pwaInstallBanner {
     /* Main content area */
     body.nx-app-body .nx-mobile-main,
     body.nx-app-body main {
-        max-width: 32rem;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
         padding-bottom: 1rem !important;
+        box-sizing: border-box;
+        overflow-x: visible !important;
     }
 
     /* Hero sections — compact mobile */

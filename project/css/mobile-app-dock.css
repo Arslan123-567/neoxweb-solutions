@@ -102,7 +102,7 @@
     }
 
     body.nx-app-body .ui-bottom-nav {
-        display: none !important;
+        display: flex !important;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -155,9 +155,9 @@
         display: flex;
         flex: 1;
         align-items: flex-end;
-        justify-content: space-around;
-        gap: 0.1rem;
-        padding-right: 3.5rem;
+        justify-content: space-evenly;
+        gap: 0.2rem;
+        padding-right: 0;
     }
 
     body.nx-app-body .ui-bottom-nav__links a {
@@ -167,14 +167,15 @@
         align-items: center;
         gap: 0.2rem;
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.52);
-        font-size: 0.5625rem;
-        font-weight: 500;
-        padding: 0.25rem 0.1rem 0.15rem;
-        max-width: 4.25rem;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.68rem;
+        font-weight: 600;
+        padding: 0.25rem 0.15rem 0.15rem;
+        max-width: none;
         text-align: center;
         line-height: 1.15;
         letter-spacing: 0.01em;
+        white-space: nowrap;
     }
 
     body.nx-app-body .ui-bottom-nav__links a i {
@@ -227,20 +228,28 @@
     }
 
     body.nx-app-body .ui-mobile-logo {
+        display: flex;
+        flex: 0 1 5.5rem;
+        min-width: 5.5rem;
+        max-width: 5.5rem;
         margin-left: 0;
-        padding-left: 6px;
+        padding-left: 0;
         transform: none;
     }
 
     body.nx-app-body .ui-mobile-logo img,
     body.nx-app-body .ui-mobile-logo .navbar__logo-img--nx {
-        height: 58px !important;
+        height: 3.25rem !important;
         width: auto !important;
-        max-height: 58px !important;
+        max-width: 5.5rem !important;
+        max-height: 3.25rem !important;
         object-fit: contain;
         object-position: left center;
         display: block;
         background: transparent !important;
+        overflow: visible;
+        mix-blend-mode: normal !important;
+        filter: none !important;
     }
 
     body.nx-app-body .ui-mobile-header__actions {
@@ -277,6 +286,24 @@
     body.nx-app-body main,
     body.nx-app-body .nx-mobile-main {
         padding-bottom: 0.5rem;
+    }
+
+    body.nx-app-body main.nx-mobile-main {
+        width: 100% !important;
+        max-width: none !important;
+        margin-inline: 0 !important;
+        overflow-x: visible !important;
+    }
+
+    body.nx-app-body.home-page main.nx-mobile-main > .hero-section--pro {
+        width: calc(100% + 2rem) !important;
+        max-width: calc(100% + 2rem) !important;
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
+    }
+
+    body.nx-app-body .nx-page-loader {
+        display: none !important;
     }
 
     body.nx-app-body .nx-page-hero:not(.hero-section--pro),

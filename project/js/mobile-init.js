@@ -7,6 +7,9 @@
 
     window.__NEOXWEB_MOBILE_INIT__ = true;
     document.documentElement.classList.add('mobile-view');
+    document.querySelectorAll('#nxPageLoader, .nx-page-loader').forEach(function (loader) {
+        loader.remove();
+    });
 
     if (window.NexuraApp || document.querySelector('script[src*="bootstrap-app.js"]')) return;
 
@@ -40,6 +43,7 @@
     function loadMobileShell() {
         if (window.NexuraApp || document.querySelector('script[src*="bootstrap-app.js"]')) return;
         var link = document.createElement('link');
+        link.id = 'nx-mobile-dock-css';
         link.rel = 'stylesheet';
         link.href = base + 'css/mobile-app-dock.css';
         document.head.appendChild(link);

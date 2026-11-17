@@ -130,38 +130,58 @@ const NexuraApp = (() => {
             { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap', id: 'nx-font' }
         ];
 
+        const stylesheetLoads = [];
         links.forEach(({ href, id }) => {
-            if (!document.getElementById(id)) {
-                const link = document.createElement('link');
+            const resolvedHref = new URL(href, document.baseURI).href;
+            let link = document.getElementById(id) ||
+                Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find((item) => item.href === resolvedHref);
+            const isNew = !link;
+            if (!link) {
+                link = document.createElement('link');
                 link.id = id;
                 link.rel = 'stylesheet';
-                link.href = href;
-                document.head.appendChild(link);
+                link.href = resolvedHref;
+                link.dataset.nxAppStyle = '1';
             }
+            if (!link.id) link.id = id;
+
+            if (id === 'nx-app-css' || id === 'nx-mobile-dock-css') {
+                if (!link.sheet) {
+                    stylesheetLoads.push(new Promise((resolve) => {
+                        const timer = setTimeout(() => {
+                            console.warn('Mobile app stylesheet is taking too long:', link.href);
+                            resolve();
+                        }, 1500);
+                        const finish = () => {
+                            clearTimeout(timer);
+                            resolve();
+                        };
+                        link.addEventListener('load', finish, { once: true });
+                        link.addEventListener('error', () => {
+                            console.error('Could not load mobile app stylesheet:', link.href);
+                            finish();
+                        }, { once: true });
+                    }));
+                }
+            }
+            if (isNew) document.head.appendChild(link);
         });
 
-        return new Promise((resolve) => {
-            let settled = false;
-            const finish = () => {
-                if (settled) return;
-                settled = true;
-                assetsLoaded = true;
-                resolve();
-            };
-
-            if (document.getElementById('bs-js')) {
-                finish();
-                return;
-            }
-
+        const bundleUrl = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
+        const resolvedBundleUrl = new URL(bundleUrl, document.baseURI).href;
+        const existingBundle = document.getElementById('bs-js') ||
+            Array.from(document.scripts).find((script) => script.src === resolvedBundleUrl);
+        if (!existingBundle) {
             const script = document.createElement('script');
             script.id = 'bs-js';
-            script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
-            script.onload = finish;
-            script.onerror = finish;
+            script.src = resolvedBundleUrl;
+            script.async = true;
+            script.onerror = () => console.error('Could not load the mobile Bootstrap bundle.');
             document.head.appendChild(script);
-            setTimeout(finish, 8000);
-        });
+        }
+
+        assetsLoaded = true;
+        return Promise.all(stylesheetLoads).then(() => undefined);
     }
 
     function getStoredUser() {
@@ -260,9 +280,9 @@ const NexuraApp = (() => {
     }
 
     const DOCK_TABS = [
-        { href: 'portfolio.html', icon: 'fa-book-open', label: 'Case Studies', match: ['portfolio.html', 'case-study.html', 'case-study-seo.html', 'case-study-ppc.html', 'studies.html'] },
-        { href: 'resources.html', icon: 'fa-file-alt', label: 'Resources', match: ['resources.html', 'blog.html', 'services.html'] },
-        { href: 'industry.html', icon: 'fa-industry', label: 'Industry', match: ['industry.html', 'cloud.html', 'saas-platforms.html'] },
+        { href: 'index.html', icon: 'fa-home', label: 'Home', match: ['index.html', 'app.html', ''] },
+        { href: 'services.html', icon: 'fa-layer-group', label: 'Services', match: ['services.html', 'web.html', 'mobile.html', 'development.html', 'software-engineering.html', 'ai.html', 'ai-data-engineering.html', 'cloud.html', 'saas-platforms.html', 'product-design.html', 'video-editing.html', 'graphic-design.html', 'it-consulting.html', 'application-modernization.html', 'testing-qa.html', 'app-development.html', 'backend-development.html', 'game-development.html', 'ios-development.html'] },
+        { href: 'portfolio.html', icon: 'fa-briefcase', label: 'Portfolio', match: ['portfolio.html', 'case-study.html', 'case-study-seo.html', 'case-study-ppc.html', 'studies.html'] },
         { href: 'contact.html', icon: 'fa-comments', label: 'Contact', match: ['contact.html'] }
     ];
 
@@ -343,8 +363,8 @@ const NexuraApp = (() => {
         document.body.appendChild(container);
     }
 
-    function injectPageLoader() {
-        document.getElementById('nxPageLoader')?.remove();
+    function removePageLoader() {
+        document.querySelectorAll('#nxPageLoader, .nx-page-loader').forEach((loader) => loader.remove());
     }
 
     function toast(message, type = 'success') {
@@ -416,7 +436,7 @@ const NexuraApp = (() => {
         document.body.classList.add('nx-app-body', 'has-dock');
         mobileEnhancePage();
 
-        injectPageLoader();
+        removePageLoader();
         injectHeader(page);
         injectDrawer();
         injectBottomNav(page);
@@ -443,6 +463,7 @@ const NexuraApp = (() => {
     }
 
     async function init() {
+        if (isMobileView()) removePageLoader();
         await loadAssets();
 
         if (isMobileView()) {
