@@ -1,0 +1,686 @@
+/**
+ * NEOXWEB — Global image quality, alignment, responsiveness (all pages)
+ * Load last — prevents stretch, bad crop, misalignment
+ */
+
+/* Base: never distort */
+.neoxweb-site img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.neoxweb-site img.nx-photo,
+.neoxweb-site .visual-art {
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Content images — full visible, no stretch */
+.neoxweb-site .nx-portfolio-row__media img,
+.neoxweb-site .nx-portfolio-row__media--full img,
+.neoxweb-site .nx-pro-split__media img,
+.neoxweb-site .nx-team-card__img img,
+.neoxweb-site .svc-showcase-card__img img,
+.neoxweb-site .contact-hero-row__media img,
+.neoxweb-site .web-hero-visual-icon img,
+.neoxweb-site .visual-art-wrap img,
+.neoxweb-site .cs-card__media img,
+.neoxweb-site .ui-cs-card__media img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin-inline: auto;
+}
+
+/* Portfolio / row media frames */
+.neoxweb-site .nx-portfolio-row__media,
+.neoxweb-site .nx-portfolio-row__media--full,
+.neoxweb-site .nx-pro-split__media,
+.neoxweb-site .nx-team-card__img,
+.neoxweb-site .svc-showcase-card__img,
+.neoxweb-site .contact-hero-row__media,
+.neoxweb-site .web-hero-visual,
+.neoxweb-site .cs-card__media,
+.neoxweb-site .ui-cs-card__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0.75rem;
+}
+
+.neoxweb-site .nx-portfolio-row__media img,
+.neoxweb-site .nx-portfolio-row__media--full img {
+    max-height: clamp(140px, 28vw, 220px);
+    width: 100%;
+    object-fit: contain;
+}
+
+/* 4-column strip — balanced cover inside fixed frame */
+.neoxweb-site .nx-img-strip__media {
+    overflow: hidden;
+    background: #0a0a0a;
+}
+
+.neoxweb-site .nx-img-strip__media img {
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+.neoxweb-site .nx-img-strip__media img,
+.neoxweb-site .nx-img-strip__card img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+}
+
+.neoxweb-site img.nx-photo,
+.neoxweb-site img.visual-art,
+.neoxweb-site .neox-service-card__media img,
+.neoxweb-site .service-panel__photo img,
+.neoxweb-site .project-card .visual-art-wrap img,
+.neoxweb-site .svc-showcase-card__img img,
+.neoxweb-site .ui-cs-card__media img,
+.neoxweb-site .cs-gallery-full__item img,
+.neoxweb-site .ui-resource-card .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+}
+
+/* Hero background images — cover, anchored right */
+.neoxweb-site .hero-tech-bg img,
+.neoxweb-site .hero-neoxweb-bg img {
+    object-fit: cover;
+    object-position: top right;
+}
+
+/* Logos & icons — crisp, no stretch */
+.neoxweb-site .navbar__logo img,
+.neoxweb-site .footer-uni__mark img,
+.neoxweb-site .service-panel-icon img,
+.neoxweb-site .tech-hub__col img {
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.neoxweb-site .service-panel-icon img {
+    max-height: 48px;
+}
+
+/* Team avatars */
+.neoxweb-site .nx-team-card__img img {
+    width: 100%;
+    max-width: 120px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+
+/* Testimonial / quote images */
+.neoxweb-site .testimonial-card img,
+.neoxweb-site .nx-testimonial img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.neoxweb-site .tm-avatar-box img {
+    width: clamp(4.5rem, 14vw, 6rem);
+    height: clamp(4.5rem, 14vw, 6rem);
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 1024px) {
+    .neoxweb-site .tm-avatar-box img {
+        width: 4.75rem;
+        height: 4.75rem;
+    }
+}
+
+/* Global responsive layout helpers */
+.neoxweb-site .container {
+    width: min(1200px, calc(100% - 2rem)) !important;
+    max-width: 1200px !important;
+    margin-inline: auto !important;
+    padding-inline: 0.75rem !important;
+}
+
+@media (max-width: 1200px) {
+    .neoxweb-site .container {
+        width: calc(100% - 2rem) !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .neoxweb-site .hero-section--pro .hero-grid--bg,
+    .neoxweb-site .hero-section--neoxweb .hero-grid--bg,
+    .neoxweb-site .nx-page-hero__inner,
+    .neoxweb-site .contact-hero-inner,
+    .neoxweb-site .svc-banner-hero__inner {
+        padding-inline: 1rem !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .neoxweb-site .hero-section--pro .hero-copy,
+    .neoxweb-site .hero-section--neoxweb .hero-copy {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .neoxweb-site .hero-section--pro .hero-actions,
+    .neoxweb-site .hero-section--neoxweb .hero-actions {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+
+    .neoxweb-site .nx-img-strip-wrap .nx-img-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .neoxweb-site .trusted-grid,
+    .neoxweb-site .neox-service-cards,
+    .neoxweb-site .nx-why-grid,
+    .neoxweb-site .nx-team-grid,
+    .neoxweb-site .project-grid,
+    .neoxweb-site .testimonial-slider,
+    .neoxweb-site .service-cards-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .neoxweb-site .footer-uni__grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .neoxweb-site .footer-uni__bar {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .neoxweb-site .hero-section--pro {
+        min-height: auto !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .neoxweb-site .hero-section--pro .hero-title {
+        font-size: clamp(1.9rem, 6vw, 2.7rem) !important;
+        max-width: 100% !important;
+    }
+
+    .neoxweb-site .hero-section--pro .hero-text {
+        font-size: 0.95rem !important;
+        max-width: 100% !important;
+        margin-top: 1rem !important;
+    }
+
+    .neoxweb-site .hero-section--pro .hero-actions .btn-hero-primary,
+    .neoxweb-site .hero-section--pro .hero-actions .btn-hero-outline {
+        /* width: 100% !important; */
+        min-width: 0 !important;
+    }
+
+    .neoxweb-site .tm-slider-wrapper {
+        padding-inline: clamp(2.25rem, 8vw, 3rem) !important;
+    }
+
+    .neoxweb-site .tm-slider-container {
+        min-width: 0 !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .neoxweb-site .nx-img-strip-wrap .nx-img-strip {
+        grid-template-columns: 1fr !important;
+    }
+
+    .neoxweb-site .footer-uni__grid {
+        padding-inline: 1rem !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .neoxweb-site .hero-section--pro .hero-title {
+        font-size: clamp(1.75rem, 8vw, 2.3rem) !important;
+    }
+
+    .neoxweb-site .btn,
+    .neoxweb-site button,
+    .neoxweb-site .btn-hero-primary,
+    .neoxweb-site .btn-hero-outline {
+        min-height: 48px !important;
+        width: 100% !important;
+    }
+}
+
+/* Global layout cap */
+.neoxweb-site .container {
+    width: min(1200px, calc(100% - 2rem)) !important;
+    max-width: 1200px !important;
+    margin-inline: auto !important;
+}
+
+html,
+body.neoxweb-site {
+    overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+    .neoxweb-site .nx-img-strip__media img {
+        object-position: center top;
+    }
+
+    .neoxweb-site .nx-portfolio-row__media,
+    .neoxweb-site .nx-portfolio-row__media--full {
+        max-width: 100% !important;
+    }
+}
+
+/* Gallery cards — full-width cover images */
+
+/* Direct cards inside section-modernization — image top, text below */
+.neoxweb-site .section-modernization > .svc-showcase-card {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: unset !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 18px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    background: #181818 !important;
+    border: 1px solid #333 !important;
+    cursor: pointer;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card::before,
+.neoxweb-site .section-modernization > .svc-showcase-card::after {
+    display: none !important;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card .svc-showcase-card__img {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 220px !important;
+    flex-shrink: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    min-height: 0 !important;
+    display: block !important;
+    overflow: hidden !important;
+    background: #1a1a1a !important;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card .svc-showcase-card__img img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0 !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    border-radius: 0 !important;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card figcaption {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    grid-column: unset !important;
+    grid-row: unset !important;
+    z-index: 2 !important;
+    padding: 14px 16px 16px !important;
+    text-align: left !important;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card figcaption h3 {
+    color: #fff !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 4px !important;
+    line-height: 1.3 !important;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card figcaption p {
+    color: #c9c9c9 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+}
+
+.neoxweb-site .section-modernization > .svc-showcase-card:hover figcaption {
+    bottom: auto !important;
+}
+
+.neoxweb-site .section-modernization:not(:has(.modernization-grid)) {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+}
+
+/* modernization-grid — image top, text below */
+.neoxweb-site .modernization-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    width: 100% !important;
+}
+
+.neoxweb-site .modernization-grid figure {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: none !important;
+    background: #181818 !important;
+    border: 1px solid #333 !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+.neoxweb-site .modernization-grid .svc-showcase-card__img {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 220px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    min-height: 0 !important;
+    display: block !important;
+    overflow: hidden !important;
+    background: #1a1a1a !important;
+}
+
+.neoxweb-site .modernization-grid .svc-showcase-card__img img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0 !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    border-radius: 0 !important;
+}
+
+.neoxweb-site .modernization-grid figcaption {
+    position: static !important;
+    padding: 14px 16px 16px !important;
+    text-align: left !important;
+}
+
+.neoxweb-site .modernization-grid figcaption h3 {
+    font-size: 1.05rem !important;
+    margin: 0 0 4px !important;
+    line-height: 1.3 !important;
+}
+
+.neoxweb-site .modernization-grid figcaption p {
+    font-size: 0.875rem !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 992px) {
+    .neoxweb-site .section-modernization:not(:has(.modernization-grid)),
+    .neoxweb-site .modernization-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .neoxweb-site .section-modernization:not(:has(.modernization-grid)),
+    .neoxweb-site .modernization-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.neoxweb-site .advantage-card,
+.neoxweb-site .case-card,
+.neoxweb-site .industry-card,
+.neoxweb-site .service-panel,
+.neoxweb-site .showcase-card,
+.neoxweb-site .svc-showcase-card,
+.neoxweb-site .web-why-card,
+.neoxweb-site .web-cap-card,
+.neoxweb-site .web-process-step,
+.neoxweb-site .ui-resource-card,
+.neoxweb-site .ui-blog-card,
+.neoxweb-site .ui-industry-card,
+.neoxweb-site .ui-cs-card,
+.neoxweb-site .cs-glass-card,
+.neoxweb-site .cs-related-card,
+.neoxweb-site .cs-featured-card,
+.neoxweb-site .contact-highlight-card,
+.neoxweb-site .capability-card,
+.neoxweb-site .process-card,
+.neoxweb-site .engage-card,
+.neoxweb-site .resource-card,
+.neoxweb-site .svc-advantage-card,
+.neoxweb-site .stack-card,
+.neoxweb-site .nx-card,
+.neoxweb-site .nx-why-card,
+.neoxweb-site .nx-process-card,
+.neoxweb-site .project-card,
+.neoxweb-site .qa-gallery-card,
+.neoxweb-site .testimonial-card,
+.neoxweb-site .pro-card,
+.neoxweb-site .nx-stack-card,
+.neoxweb-site .nx-team-card,
+.neoxweb-site .neox-service-card,
+.neoxweb-site .nx-pro-split,
+.neoxweb-site .nx-portfolio-row {
+    position: relative !important;
+    overflow: hidden !important;
+    background: rgba(16, 28, 21, 0.82) !important;
+    border: 1px solid rgba(56, 211, 138, 0.2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.neoxweb-site .advantage-card:hover,
+.neoxweb-site .case-card:hover,
+.neoxweb-site .industry-card:hover,
+.neoxweb-site .service-panel:hover,
+.neoxweb-site .showcase-card:hover,
+.neoxweb-site .svc-showcase-card:hover,
+.neoxweb-site .web-why-card:hover,
+.neoxweb-site .web-cap-card:hover,
+.neoxweb-site .web-process-step:hover,
+.neoxweb-site .ui-resource-card:hover,
+.neoxweb-site .ui-blog-card:hover,
+.neoxweb-site .ui-industry-card:hover,
+.neoxweb-site .ui-cs-card:hover,
+.neoxweb-site .cs-glass-card:hover,
+.neoxweb-site .cs-related-card:hover,
+.neoxweb-site .cs-featured-card:hover,
+.neoxweb-site .contact-highlight-card:hover,
+.neoxweb-site .capability-card:hover,
+.neoxweb-site .process-card:hover,
+.neoxweb-site .engage-card:hover,
+.neoxweb-site .resource-card:hover,
+.neoxweb-site .svc-advantage-card:hover,
+.neoxweb-site .stack-card:hover,
+.neoxweb-site .nx-card:hover,
+.neoxweb-site .nx-why-card:hover,
+.neoxweb-site .nx-process-card:hover,
+.neoxweb-site .project-card:hover,
+.neoxweb-site .qa-gallery-card:hover,
+.neoxweb-site .testimonial-card:hover,
+.neoxweb-site .pro-card:hover,
+.neoxweb-site .nx-stack-card:hover,
+.neoxweb-site .nx-team-card:hover,
+.neoxweb-site .neox-service-card:hover,
+.neoxweb-site .nx-pro-split:hover,
+.neoxweb-site .nx-portfolio-row:hover {
+    transform: translateY(-6px) scale(1.01) !important;
+    border-color: #38d38a !important;
+    box-shadow: 0 18px 36px -16px rgba(0, 0, 0, 0.75), 0 0 22px rgba(56, 211, 138, 0.2) !important;
+}
+
+.neoxweb-site .service-panel:not(.service-panel--has-photo),
+.neoxweb-site .svc-advantage-card,
+.neoxweb-site .nx-why-card,
+.neoxweb-site .nx-process-card {
+    padding: 1.15rem !important;
+}
+
+.neoxweb-site .service-panel h3,
+.neoxweb-site .service-panel--has-photo h3,
+.neoxweb-site .svc-advantage-card h4,
+.neoxweb-site .nx-why-card h3,
+.neoxweb-site .nx-process-card h3 {
+    font-size: clamp(0.98rem, 1.5vw, 1.12rem) !important;
+    line-height: 1.35 !important;
+}
+
+.neoxweb-site .service-panel p,
+.neoxweb-site .service-panel--has-photo p,
+.neoxweb-site .svc-advantage-card p,
+.neoxweb-site .nx-why-card p,
+.neoxweb-site .nx-process-card p {
+    font-size: 0.84rem !important;
+    line-height: 1.5 !important;
+}
+
+.neoxweb-site .service-panel__photo,
+.neoxweb-site .service-panel--has-photo .service-panel__photo {
+    max-height: 150px !important;
+    overflow: hidden !important;
+}
+
+.neoxweb-site .service-panel__photo img {
+    height: 150px !important;
+    object-fit: cover !important;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease !important;
+}
+
+.neoxweb-site .service-panel:hover .service-panel__photo img,
+.neoxweb-site .svc-showcase-card:hover img,
+.neoxweb-site .ui-blog-card:hover img,
+.neoxweb-site .ui-cs-card:hover img,
+.neoxweb-site .cs-related-card:hover img,
+.neoxweb-site .project-card:hover img {
+    transform: scale(1.06) !important;
+    filter: saturate(1.08) brightness(1.05);
+}
+
+.neoxweb-site .advantage-card::after,
+.neoxweb-site .case-card::after,
+.neoxweb-site .industry-card::after,
+.neoxweb-site .service-panel::after,
+.neoxweb-site .showcase-card::after,
+.neoxweb-site .svc-showcase-card::after,
+.neoxweb-site .ui-blog-card::after,
+.neoxweb-site .ui-cs-card::after,
+.neoxweb-site .cs-glass-card::after,
+.neoxweb-site .cs-related-card::after,
+.neoxweb-site .svc-advantage-card::after,
+.neoxweb-site .nx-why-card::after,
+.neoxweb-site .nx-process-card::after,
+.neoxweb-site .qa-gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(110deg, transparent 38%, rgba(255, 255, 255, 0.06) 50%, transparent 62%);
+    background-size: 220% 100%;
+    background-position: 120% 0;
+    transition: background-position 0.7s ease;
+}
+
+.neoxweb-site .advantage-card:hover::after,
+.neoxweb-site .case-card:hover::after,
+.neoxweb-site .industry-card:hover::after,
+.neoxweb-site .service-panel:hover::after,
+.neoxweb-site .showcase-card:hover::after,
+.neoxweb-site .svc-showcase-card:hover::after,
+.neoxweb-site .ui-blog-card:hover::after,
+.neoxweb-site .ui-cs-card:hover::after,
+.neoxweb-site .cs-glass-card:hover::after,
+.neoxweb-site .cs-related-card:hover::after,
+.neoxweb-site .svc-advantage-card:hover::after,
+.neoxweb-site .nx-why-card:hover::after,
+.neoxweb-site .nx-process-card:hover::after,
+.neoxweb-site .qa-gallery-card:hover::after {
+    background-position: -20% 0;
+}
+
+@media (max-width: 640px) {
+    .neoxweb-site .service-panel:not(.service-panel--has-photo),
+    .neoxweb-site .svc-advantage-card,
+    .neoxweb-site .nx-why-card,
+    .neoxweb-site .nx-process-card {
+        padding: 0.9rem !important;
+    }
+
+    .neoxweb-site .service-panel__photo,
+    .neoxweb-site .service-panel--has-photo .service-panel__photo,
+    .neoxweb-site .service-panel__photo img {
+        max-height: 125px !important;
+        height: 125px !important;
+    }
+}
+
+/* Cursor-following green hover glow for the homepage service image cards. */
+.neoxweb-site .nx-img-strip__card {
+    background:
+        radial-gradient(260px circle at var(--nx-card-x, 50%) var(--nx-card-y, 0%), rgba(56, 211, 138, 0.10), transparent 76%),
+        rgba(16, 28, 21, 0.82) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease, background 0.12s ease !important;
+}
+
+.neoxweb-site .nx-img-strip__card:hover {
+    background:
+        radial-gradient(300px circle at var(--nx-card-x, 50%) var(--nx-card-y, 0%), rgba(56, 211, 138, 0.22), transparent 76%),
+        rgba(16, 28, 21, 0.88) !important;
+}

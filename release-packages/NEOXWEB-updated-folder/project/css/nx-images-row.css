@@ -1,0 +1,256 @@
+/**
+ * NEOXWEB — 4 images left → right (bigger images + readable text)
+ */
+
+.neoxweb-site .nx-img-strip {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.15rem !important;
+    width: min(1280px, calc(100% - 2rem)) !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.neoxweb-site .nx-img-strip + .nx-img-strip {
+    margin-top: clamp(1rem, 2.5vw, 1.5rem) !important;
+}
+
+.neoxweb-site .nx-img-strip__card {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: unset !important;
+    padding: 0 !important;
+    border-bottom: none !important;
+    border-radius: 1.1rem !important;
+    overflow: hidden !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(74, 222, 128, 0.22) !important;
+    text-align: left !important;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.neoxweb-site .nx-img-strip__card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(74, 222, 128, 0.5) !important;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35) !important;
+}
+
+.neoxweb-site .nx-img-strip__media {
+    order: unset !important;
+    grid-column: unset !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    border-radius: 0 !important;
+    border: none !important;
+    background: #0a0a0a !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+}
+
+.neoxweb-site .nx-img-strip__media img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.neoxweb-site .nx-img-strip__body {
+    grid-column: unset !important;
+    order: unset !important;
+    padding: 0.75rem 0.85rem 0.9rem !important;
+    text-align: left !important;
+}
+
+.neoxweb-site .nx-img-strip__body .ui-cs-card__tag,
+.neoxweb-site .nx-img-strip__body .section-tag {
+    display: inline-flex !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 0.75rem !important;
+}
+
+.neoxweb-site .nx-img-strip__body h3 {
+    font-size: clamp(0.95rem, 1.5vw, 1.05rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    margin: 0 0 0.5rem !important;
+    text-align: left !important;
+    color: #fff !important;
+}
+
+.neoxweb-site .nx-img-strip__body p,
+.neoxweb-site .nx-img-strip__body .nx-quote {
+    font-size: clamp(0.8rem, 1.25vw, 0.88rem) !important;
+    line-height: 1.5 !important;
+    margin: 0 0 0.65rem !important;
+    color: rgba(255, 255, 255, 0.78) !important;
+    text-align: left !important;
+    font-style: normal !important;
+}
+
+.neoxweb-site .nx-img-strip__body .nx-quote {
+    font-style: italic !important;
+}
+
+.neoxweb-site .nx-img-strip__body .testimonial-author {
+    margin-top: 0.35rem !important;
+    text-align: left !important;
+}
+
+.neoxweb-site .nx-img-strip__body .testimonial-author strong {
+    display: block !important;
+    font-size: 0.9rem !important;
+    color: #4ade80 !important;
+}
+
+.neoxweb-site .nx-img-strip__body .testimonial-author span {
+    font-size: 0.8rem !important;
+    color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.neoxweb-site .nx-img-strip__body a,
+.neoxweb-site .nx-img-strip__link {
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #4ade80 !important;
+    text-align: left !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    margin-top: 0.25rem !important;
+}
+
+/* Final card treatment: this file loads after the row layout overrides. */
+.neoxweb-site .nx-img-strip__card {
+    background: rgba(16, 28, 21, 0.82) !important;
+    border: 1px solid rgba(56, 211, 138, 0.2) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18) !important;
+    position: relative !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease !important;
+    animation: neoxCardFloat 0.9s ease both !important;
+}
+
+.neoxweb-site .nx-img-strip__card:nth-child(2) { animation-delay: 0.08s !important; }
+.neoxweb-site .nx-img-strip__card:nth-child(3) { animation-delay: 0.16s !important; }
+.neoxweb-site .nx-img-strip__card:nth-child(4) { animation-delay: 0.24s !important; }
+
+.neoxweb-site .nx-img-strip__card:hover {
+    transform: translateY(-8px) scale(1.01) !important;
+    border-color: #38d38a !important;
+    box-shadow: 0 22px 44px -18px rgba(0, 0, 0, 0.72), 0 0 26px rgba(56, 211, 138, 0.22) !important;
+}
+
+.neoxweb-site .nx-img-strip__card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.06) 50%, transparent 65%);
+    background-size: 220% 100%;
+    background-position: 120% 0;
+    transition: background-position 0.7s ease;
+}
+
+.neoxweb-site .nx-img-strip__card:hover::after {
+    background-position: -20% 0;
+}
+
+.neoxweb-site .nx-img-strip__card:hover .nx-img-strip__media img {
+    transform: none !important;
+    filter: saturate(1.08) brightness(1.06);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+
+.neoxweb-site .nx-img-strip__card:hover .nx-img-strip__body h3 {
+    color: #38d38a !important;
+    transition: color 0.3s ease;
+}
+
+.neoxweb-site .nx-img-strip-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    max-width: min(1280px, 100%) !important;
+}
+
+.neoxweb-site main .container:has(.nx-img-strip) {
+    max-width: min(1280px, 100%) !important;
+}
+
+.neoxweb-site main .section-header .section-desc {
+    font-size: clamp(0.95rem, 1.6vw, 1.05rem) !important;
+    line-height: 1.65 !important;
+    color: rgba(255, 255, 255, 0.72) !important;
+    margin-top: 0.5rem !important;
+    text-align: left !important;
+}
+
+@media (max-width: 1024px) {
+    .neoxweb-site .nx-img-strip-wrap .nx-img-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .neoxweb-site .nx-img-strip-wrap {
+        width: calc(100vw - 2rem) !important;
+        max-width: none !important;
+        overflow: hidden !important;
+    }
+
+    .neoxweb-site .nx-img-strip-wrap .nx-img-strip {
+        display: flex !important;
+        grid-template-columns: none !important;
+        gap: 0.9rem !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 12% 0 0 !important;
+        overflow-x: auto !important;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .neoxweb-site .nx-img-strip-wrap .nx-img-strip::-webkit-scrollbar {
+        display: none;
+    }
+
+    .neoxweb-site .nx-img-strip-wrap .nx-img-strip__card {
+        flex: 0 0 88% !important;
+        width: 88% !important;
+        scroll-snap-align: start;
+    }
+
+}
+
+.neoxweb-site .nx-img-strip__media,
+.neoxweb-site .nx-img-strip__media img {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+}
+
+.neoxweb-site .nx-img-strip__media img {
+    width: 100% !important;
+    object-fit: contain !important;
+    transform: none !important;
+}

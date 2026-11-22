@@ -13,6 +13,14 @@
     --nxv-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
 }
 
+#navbar-container {
+    min-height: 64px;
+}
+
+#navbar-container:not(.nx-navbar-ready) {
+    visibility: hidden;
+}
+
 
 /* MAIN WRAPPER */
 
@@ -62,6 +70,15 @@
     height: 40px;
     object-fit: contain;
     display: block;
+}
+
+/* Full-sized wordmark on laptop and desktop layouts. The compact dimensions
+   below remain in the tablet and mobile breakpoints. */
+@media (min-width: 1101px) {
+    .nxv-brand-image {
+        width: clamp(136px, 10.5vw, 154px);
+        height: 58px;
+    }
 }
 
 
@@ -862,7 +879,11 @@
     }
 
     .nxv-header-inner {
+        width: 100%;
         min-height: 70px;
+        margin: 0;
+        padding-inline: 4px;
+        box-sizing: border-box;
     }
 
 

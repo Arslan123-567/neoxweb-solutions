@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Customer support">
+  <rect width="640" height="400" fill="#030806"/>
+  <path d="M190 210v-24a130 130 0 0 1 260 0v24" fill="none" stroke="#4ade80" stroke-width="13" stroke-linecap="round"/>
+  <rect x="170" y="195" width="48" height="92" rx="20" fill="#14532d" stroke="#86efac" stroke-width="3"/>
+  <rect x="422" y="195" width="48" height="92" rx="20" fill="#14532d" stroke="#86efac" stroke-width="3"/>
+  <path d="M445 278c-16 42-49 61-99 61h-37" fill="none" stroke="#4ade80" stroke-width="7" stroke-linecap="round"/>
+  <rect x="270" y="322" width="62" height="24" rx="12" fill="#22c55e"/>
+  <path d="M268 105h104a20 20 0 0 1 20 20v40a20 20 0 0 1-20 20h-45l-27 23v-23h-32a20 20 0 0 1-20-20v-40a20 20 0 0 1 20-20z" fill="#101b15" stroke="#286b43" stroke-width="2"/>
+  <circle cx="292" cy="145" r="5" fill="#86efac"/><circle cx="320" cy="145" r="5" fill="#86efac"/><circle cx="348" cy="145" r="5" fill="#86efac"/>
+  <text x="320" y="385" text-anchor="middle" fill="#4ade80" font-family="Inter,sans-serif" font-size="22" font-weight="700">Here When You Need Us</text>
+</svg>
